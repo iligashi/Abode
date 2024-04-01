@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Houses from "../Images/houses.jpeg";
 
 interface Props {}
 
 const LoginView = (props: Props) => {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const divStyle: React.CSSProperties = {
     display: "block",
     padding: "7px",
@@ -28,21 +42,23 @@ const LoginView = (props: Props) => {
     height: "50px",
   };
   const angle: React.CSSProperties = {
-    display: "flex",
-    position: 'absolute',
+    display: windowWidth <= 768 ? "none" : "block",
+    position: "absolute",
     backgroundColor: "#fff",
     transform: "rotateZ(3deg)",
     width: "100px",
     right: "53%",
     top: "-5px",
     height: "101%",
-    zIndex: "1"
+    zIndex: "1",
   };
   const image: React.CSSProperties = {
+    display: windowWidth <= 768 ? "none" : "block",
     position: "relative",
     width: "55%",
-    height: "100%"
+    height: "100%",
   };
+
   const formWrap: React.CSSProperties = {
     display: "flex",
     overflow: "hidden",
@@ -55,7 +71,14 @@ const LoginView = (props: Props) => {
 
   return (
     <div className="formWrap flex" style={formWrap}>
-      <form className="login" style={{ width: "40%", textAlign: "center", alignSelf: "center" }}>
+      <form
+        className="login"
+        style={{
+          width: windowWidth <= 768 ? "100%" : "40%",
+          textAlign: "center",
+          alignSelf: "center",
+        }}
+      >
         <h2 style={h2}> Login to Abode</h2>
         <div style={divStyle}>
           <div style={{ padding: "2px" }}>
@@ -83,16 +106,16 @@ const LoginView = (props: Props) => {
             Don't have an account?
             <span style={{ cursor: "pointer", color: "#67c23a" }}>
               {" "}
-              <a style={{textDecoration:'none', color:'#67c23a'}} href="signup">Sign Up</a>
+              <a style={{ textDecoration: "none", color: "#67c23a" }} href="signup">
+                Sign Up
+              </a>
             </span>
           </p>
         </div>
       </form>
-      {/* <div> */}
         <div style={angle}></div>
-        <img style={image} src={Houses}  alt="" />
-      </div>
-    // </div>
+        <img style={image} src={Houses} alt="" />
+    </div>
   );
 };
 

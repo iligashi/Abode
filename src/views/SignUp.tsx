@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Houses from "../Images/houses.jpeg";
 
 interface Props {}
 
 const SignUp = (props: Props) => {
+    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+    
+        window.addEventListener("resize", handleResize);
+    
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+      }, []);
+    
   const divStyle: React.CSSProperties = {
     display: "block",
     padding: "7px",
@@ -28,17 +41,18 @@ const SignUp = (props: Props) => {
     height: "50px",
   };
   const angle: React.CSSProperties = {
-    display: "flex",
-    position: 'absolute',
+    display: windowWidth <= 768 ? "none" : "block",
+    position: "absolute",
     backgroundColor: "#fff",
     transform: "rotateZ(3deg)",
     width: "100px",
     right: "53%",
     top: "-5px",
     height: "101%",
-    zIndex: "1"
+    zIndex: "1",
   };
   const image: React.CSSProperties = {
+    display: windowWidth <= 768 ? "none" : "block",
     position: "relative",
     width: "55%",
     height: "100%"
@@ -55,7 +69,11 @@ const SignUp = (props: Props) => {
 
   return (
     <div className="formWrap flex" style={formWrap}>
-      <form className="login" style={{ width: "40%", textAlign: "center", alignSelf: "center" }}>
+      <form className="login"  style={{
+          width: windowWidth <= 768 ? "100%" : "40%",
+          textAlign: "center",
+          alignSelf: "center",
+        }}>
         <h2 style={h2}> SignUp to Abode</h2>
         <div style={divStyle}>
           <div style={{ padding: "2px" }}>
@@ -86,7 +104,7 @@ const SignUp = (props: Props) => {
         </div>
         <div>
           <p>
-           Alredy have an account?
+           Already have an account?
             <span style={{ cursor: "pointer", color: "#67c23a" }}>
               {" "}
              <a style={{textDecoration:'none', color:'#67c23a'}} href="login"> Sign In</a>
