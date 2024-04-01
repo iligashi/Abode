@@ -10,7 +10,11 @@ const App: React.FC = () => (
 			<Route path="home" element={<Homepage />} />
 			<Route path="login" element={<LoginView />} />
       <Route path="contactus" element={<ContactUs />} />
-      <Route path="profile" element={<ProfileView />} />
+	  <Route
+  path="profile"
+  element={<ProfileView name="Ilaz Gashi" email="ili@gmail.com" bio="Admin of the abode" phoneNumber="+1234567890" profileImageUrl={require('./Images/ili.jpg')} status="Active" />}
+/>
+
 		</Routes>
 	</BrowserRouter>
 );
