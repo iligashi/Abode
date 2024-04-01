@@ -89,7 +89,7 @@ const SignUp = (props: Props) => {
            Alredy have an account?
             <span style={{ cursor: "pointer", color: "#67c23a" }}>
               {" "}
-              Sign In
+             <a style={{textDecoration:'none', color:'#67c23a'}} href="login"> Sign In</a>
             </span>
           </p>
         </div>

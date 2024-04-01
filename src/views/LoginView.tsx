@@ -83,7 +83,7 @@ const LoginView = (props: Props) => {
             Don't have an account?
             <span style={{ cursor: "pointer", color: "#67c23a" }}>
               {" "}
-              Sign Up
+              <a style={{textDecoration:'none', color:'#67c23a'}} href="signup">Sign Up</a>
             </span>
           </p>
         </div>
