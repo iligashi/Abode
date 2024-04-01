@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Button } from 'react-bootstrap';
-import './css/ProfileView.css'; 
+import './css/ProfileView.css';
 
 interface Props {
   name: string;
@@ -23,7 +22,6 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
   };
 
   return (
-    
     <div className="profile-container">
       <div className="profile">
         <div className="profile-header">
@@ -42,20 +40,20 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
               <strong>Phone Number:</strong> {phoneNumber}
             </div>
             <div className="profile-item">
-              <strong>Status:</strong> {status} <Button variant="outline-primary" size="sm" onClick={toggleStatus}>Toggle Status</Button>
+              <strong>Status:</strong> {status} <button className="btn btn-outline-primary btn-sm" onClick={toggleStatus}>Toggle Status</button>
             </div>
             <div className="profile-item">
               <strong>Bio:</strong> {bio}
             </div>
           </div>
           <div className="profile-actions">
-            <Button variant="primary">Change Passwords</Button>{' '}
-            <Button variant="primary">See Favorites</Button>{' '}
+            <button className="btn btn-primary mr-2">Change Passwords</button>
+            <button className="btn btn-primary">See Favorites</button>
           </div>
         </div>
       </div>
       <div className="logout-button">
-        <Button variant="danger" onClick={handleLogout}>Log Out</Button>
+        <button className="btn btn-danger" onClick={handleLogout}>Log Out</button>
       </div>
     </div>
   );
