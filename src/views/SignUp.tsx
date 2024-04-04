@@ -1,21 +1,78 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
+
 import Houses from "../Images/houses.jpeg";
 
 interface Props {}
 
 const SignUp = (props: Props) => {
+    const [formData, setFormData] = useState({
+        Name: '',
+        email: '',
+        Password: '',
+        Surname: ''
+      });
+      const [errors, setErrors] = useState({
+        Name: '',
+        email: '',
+        Password: '',
+        Surname: ''
+      });
+    
+   
+    
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-    useEffect(() => {
-        const handleResize = () => {
-          setWindowWidth(window.innerWidth);
-        };
-    
-        window.addEventListener("resize", handleResize);
-    
-        return () => {
-          window.removeEventListener("resize", handleResize);
-        };
-      }, []);
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { name, value } = e.target;
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      };
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        let newErrors = {
+            Name: '',
+            email: '',
+            Password: '',
+            Surname: ''
+
+    }
+    // const isValidEmail = (email: string): boolean => {
+    //     // Regular expression for basic email validation
+    //     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    //     return regex.test(email);
+    //   };
+
+    if (formData.Name.trim() === '') {
+        newErrors.Name = 'please fill out this field.';
+      }
+    if (formData.Password.trim() === '') {
+        newErrors.Password = 'please fill out this field.';
+      }
+  
+    if (formData.Surname.trim() === '') {
+        newErrors.Surname = 'please fill out this field.';
+      }
+  
+      
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(formData.email)) {
+        newErrors.email = 'email is not available';
+      }
+      setErrors(newErrors);
+      if (
+        !newErrors.Name &&
+        !newErrors.email &&
+        !newErrors.Password &&
+        !newErrors.Surname
+      ) {
+        // Submit the form
+        console.log('Form submitted successfully:', formData);
+      }
+    };
+   
+
+   
     
   const divStyle: React.CSSProperties = {
     display: "block",
@@ -69,36 +126,57 @@ const SignUp = (props: Props) => {
 
   return (
     <div className="formWrap flex" style={formWrap}>
-      <form className="login"  style={{
+      <form  onSubmit={handleSubmit}
+      className="signUp"  style={{
           width: windowWidth <= 768 ? "100%" : "40%",
           textAlign: "center",
           alignSelf: "center",
         }}>
         <h2 style={h2}> SignUp to Abode</h2>
         <div style={divStyle}>
+            <div>
           <div style={{ padding: "2px" }}>
-            <input style={input} type="text" placeholder="First Name" name="Name" />
+            <input style={input} type="text" placeholder="First Name" name="Name" onChange={handleChange} value={formData.Name}/>
+            
           </div>
+          {errors.Name && <span style={{color:'red',}}>{errors.Name}</span>}
+          </div>
+         <div>
+
+        
           <div style={{ padding: "2px" }}>
             <input
               style={input}
               type="text"
               placeholder="Last Name"
               name="Surname"
+              value={formData.Surname}
+              onChange={handleChange}
             />
-          </div>
+              
+          </div>{errors.Surname && <span style={{color:'red',}}>{errors.Surname}</span>}
+           </div>
+           <div>
           <div style={{ padding: "2px" }}>
-            <input style={input} type="text" placeholder="Email" name="email" />
+            <input style={input} type="text" placeholder="Email" name="email" value={formData.email} onChange={handleChange} />
+            
           </div>
+          {errors.email && <span style={{color:'red',}}>{errors.email}</span>}
+          </div>
+          <div>
           <div style={{ padding: "2px" }}>
-            <input style={input} type="Password" placeholder="Password" name="Password" />
+            <input style={input} type="Password" placeholder="Password" name="Password" value={formData.Password} onChange={handleChange} />
+            
           </div>
+          {errors.Password && <span style={{color:'red',}}>{errors.Password}</span>}
+          </div>
+          
         </div>
         {/* <div>
           <span>Forgot your Password?</span>
         </div> */}
         <div>
-          <button style={button} type="button" className="btn btn-success">
+          <button  style={button} type="submit" className="btn btn-success">
             Sign Up
           </button>
         </div>
