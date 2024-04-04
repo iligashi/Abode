@@ -14,7 +14,7 @@ function Homepage(){
           
           <div className="logo-2">
             <a href="nav.html">
-              <img src="bars.png" alt="Menu" style={{ width: '30px' }} />
+              //img
             </a>
           </div>
           <nav>
@@ -90,9 +90,7 @@ function Homepage(){
               <div>
                 <h3>Stay connected with ABODE</h3>
                 <div className="icons">
-                  <img src="icons8-facebook-30.png" alt="Facebook" />
-                  <img src="icons8-instagram-30.png" alt="Instagram" />
-                  <img src="icons8-twitter-30.png" alt="Twitter" />
+                  //img
                 </div>
                 <h2>Mundësuar nga Abode, Inc.</h2>
                 <h5>Të gjitha të drejtat e rezervuara</h5>
