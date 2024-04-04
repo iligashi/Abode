@@ -53,12 +53,18 @@ const SignUp = (props: Props) => {
     if (formData.Surname.trim() === '') {
         newErrors.Surname = 'please fill out this field.';
       }
-  
       
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(formData.email)) {
+
+     
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!formData.email.trim() ) {
+        newErrors.email = 'please fill out this field.';
+      }
+      
+      else if (!emailRegex.test(formData.email))  {
         newErrors.email = 'email is not available';
       }
+    
       setErrors(newErrors);
       if (
         !newErrors.Name &&
