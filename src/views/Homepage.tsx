@@ -1,5 +1,5 @@
 import React from "react";
-import './css/home.css';
+import './css/contact.css';
 
 function Homepage(){
   return(
