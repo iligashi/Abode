@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './css/ProfileView.css';
 
 interface Props {
@@ -19,21 +20,15 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
     setStatus(status === 'Active' ? 'Sleepy' : 'Active');
   };
 
-  const handleLogout = () => {
-    console.log('Logging out...');
-  };
-
   const handleEditProfile = () => {
     setIsEditing(true);
   };
 
   const handleSave = () => {
-   
     setIsEditing(false);
   };
 
   const handleCancel = () => {
-    
     setEditedInfo({ name, email, bio, phoneNumber });
     setIsEditing(false);
   };
@@ -49,16 +44,24 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
     if (file) {
-   
       const reader = new FileReader();
       reader.onload = (e) => {
         const imageUrl = e.target?.result as string;
-        
         console.log('Selected image URL:', imageUrl);
       };
       reader.readAsDataURL(file);
     }
   };
+  const linkStyle = {
+    textDecoration: 'none',
+    color : 'white'
+
+  };
+
+  // const handleLogout = () => {
+  //   console.log('Logging out...');
+  //   Navigate('/login');
+  // };
 
   return (
     <div className="container">
@@ -116,7 +119,7 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
           </div>
           {!isEditing && (
             <div className="text-center mt-3">
-              <button className="btn btn-danger" onClick={handleLogout}>Log Out</button>
+              <button className="btn btn-danger"><Link style={linkStyle} to="/login" >Log Out</Link></button>
             </div>
           )}
         </div>
