@@ -115,25 +115,25 @@ function App() {
                 </div>
                 <h2>Mundësuar nga Abode, Inc.</h2>
                 <h5>Të gjitha të drejtat e rezervuara</h5>
-                <a href="">Kushtet e përdorimit  </a>
-                <a href="">Politika e Privatësisë</a>
+                <a href="*">Kushtet e përdorimit  </a>
+                <a href="*">Politika e Privatësisë</a>
               </div>
             </div>
             <div className="col-md-3 mb-4 mb-md-0">
               <div className="div">
                 <h3>Llogaria</h3>
-                <a href="">Rezervimet</a>
-                <a href="">Lista e deshirave</a>
-                <a href="">Llogaria ime</a>
+                <a href="*">Rezervimet</a>
+                <a href="*">Lista e deshirave</a>
+                <a href="*">Llogaria ime</a>
               </div>
             </div>
             <div className="col-md-3">
               <div className="div">
                 <h3>Kontakti</h3>
-                <a href="">info@gmail.com</a>
-                <a href="">Tel:+383 045 883 702</a>
-                <a href="">Prishtinë, Kosovë</a>
-                <a href="">.......</a>
+                <a href="*">info@gmail.com</a>
+                <a href="*">Tel:+383 045 883 702</a>
+                <a href="*">Prishtinë, Kosovë</a>
+                <a href="*">.......</a>
               </div>
             </div>
           </div>

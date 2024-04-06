@@ -3,7 +3,7 @@ import App from '../App';
 import Homepage from '../views/Homepage';
 import LoginView from '../views/LoginView';
 import ContactUs from '../views/ContactUs';
-import Contact from '../views/contactform/contact';
+import Contact from '../views/contactformTEST/contact-form-07/contact';
 
 export const router = (
   <BrowserRouter>
