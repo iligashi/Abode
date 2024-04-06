@@ -37,11 +37,7 @@ const SignUp = (props: Props) => {
             Surname: ''
 
     }
-    // const isValidEmail = (email: string): boolean => {
-    //     // Regular expression for basic email validation
-    //     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    //     return regex.test(email);
-    //   };
+   
 
     if (formData.Name.trim() === '') {
         newErrors.Name = 'please fill out this field.';
