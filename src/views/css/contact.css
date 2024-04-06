@@ -33,6 +33,7 @@ body {
   padding: 20px;
   border: 1px solid #e1e1e1;
   border-radius: 5px;
+  height: 300PX;
 }
 
 .con-info h3 {
@@ -41,7 +42,6 @@ body {
 }
 
 .last {
-  max-width: 600px;
   margin: 0 auto;
   background-color: #d4d2d2;
   border-radius: 20px;

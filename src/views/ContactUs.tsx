@@ -18,7 +18,6 @@ function App() {
           
           <div className="logo-2">
             <a href="nav.html">
-              <img src="bars.png" alt="Menu" style={{ width: '30px' }} />
             </a>
           </div>
           <nav>
@@ -55,10 +54,18 @@ function App() {
                 </div>
               </div>
             </div>
-           
+           <div className="con-info bg-light p-4">
+                <h3>GENERAL INFORMATION:</h3>
+                <p> Pagesat<br />
+                  65433561<br />
+                  Kosovo</p>
+              </div>
           </div>
+          
         </div>
+        
       </div>
+      
 
       <div className="last bg-light py-5">
         <div className="container">
@@ -87,8 +94,7 @@ function App() {
               </div>
             </div>
             <div className="col-lg-6 right-image pr-0">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619902.0054433027!2d-122.68851282163044!3d37.534535608111824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1507725785789"
-    width="100%" height="538" frameBorder="0" style={{ border: '0' }} allowFullScreen data-aos="fade-left" data-aos-duration="3000"></iframe>
+  
 </div>
 
           </form>
@@ -104,15 +110,12 @@ function App() {
             </div>
             <div className="col-md-3 mb-4 mb-md-0">
               <div className="div">
-                <h3>stay connected with ABODE</h3>
                 <div className="icons">
-                  <img src="icons8-facebook-30.png" alt="Facebook" />
-                  <img src="icons8-instagram-30.png" alt="Instagram" />
-                  <img src="icons8-twitter-30.png" alt="Twitter" />
+                  
                 </div>
                 <h2>Mundësuar nga Abode, Inc.</h2>
                 <h5>Të gjitha të drejtat e rezervuara</h5>
-                <a href="">Kushtet e përdorimit – </a>
+                <a href="">Kushtet e përdorimit  </a>
                 <a href="">Politika e Privatësisë</a>
               </div>
             </div>
