@@ -20,7 +20,7 @@ const Header = (props: Props) => {
       const SearchAndProfile: React.CSSProperties = {
         display: 'flex',
         
-        marginLeft: windowWidth <= 768 ? "0px": "400px",
+        // marginLeft: windowWidth <= 768 ? "0px": "400px",
       };
 
 
@@ -30,9 +30,9 @@ const Header = (props: Props) => {
         
         <header className="p-3 mb-3 border-bottom">
         <div className="container">
-          <div className="d-flex flex-wrap  ">
+          {/* <div className="d-flex flex-wrap  "> */}
             
-           <div style={{display:'inline-flex', justifyContent:'space-between', flexWrap:'wrap',}}>
+           <div style={{display:'flex', justifyContent:'space-between', flexWrap:'wrap', alignItems: 'center', width: '100%'}}>
 
            
             
@@ -56,7 +56,7 @@ const Header = (props: Props) => {
            <div style={SearchAndProfile}>
 
            
-            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <form className="col-12 col-lg-auto" role="search">
               <input type="search" className="form-control" placeholder="Search..." aria-label="Search" />
             </form>
   
@@ -75,7 +75,7 @@ const Header = (props: Props) => {
               </ul>
               </div>
               </div>
-            </div>
+            {/* </div> */}
           </div>
     
       </header>
