@@ -33,48 +33,7 @@ function Homepage(){
   return(
     <div>
       <Header/>
-      <header className="sticky-top bg-light">
-        <div className="container d-flex justify-content-between align-items-center py-3">
-        <div className="header-1" data-visible-range="0-100">
-
-          <div className="logo-2">
-          <img src={outputOnlinePngToolsImage} alt="" /> 
-          </div>
-          <nav>
-            <ul className="d-flex">
-              <li>Home</li>
-              <li>Contact</li>
-              <li>About Us</li>
-
-            </ul>
-          </nav>
-         
-        </div>
-        
-          <div className="header-2" data-visible-range="101-500">
-            <nav>
-              <ul>
-                <div className="where"><li>Where</li></div>
-                <div className="checkIn"><li>Check in</li></div>
-                <div className="checkOut"><li>Check out</li></div>
-                <div className="who"><li>Who</li></div>
-              </ul>
-            </nav>
-          </div>
-          <div className="header-3" data-visible-range="501-">
-          <nav>
-              <ul>
-                <div className="buY"><li>Buy</li></div>
-                <div className="rent"><li>Rent</li></div>
-                <div className="sold"><li>Sold</li></div>
-                <div className="newH"><li>New</li></div>
-                <div className="findA"><li>Find agents</li></div>
-              </ul>
-            </nav>
-          </div>
-          </div>
-          
-      </header>
+      
       <section className="main">
       <div className="offers">
         <div className="box">
