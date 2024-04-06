@@ -26,11 +26,13 @@ import img21 from "../Images/21.webp";
 import img22 from "../Images/22.jpg";
 import img23 from "../Images/23.webp";
 import img24 from "../Images/24.jpg";
+import Header from "./Header";
 
 
 function Homepage(){
   return(
     <div>
+      <Header/>
       <header className="sticky-top bg-light">
         <div className="container d-flex justify-content-between align-items-center py-3">
         <div className="header-1" data-visible-range="0-100">

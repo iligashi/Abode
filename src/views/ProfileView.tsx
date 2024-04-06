@@ -66,10 +66,10 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
 
   return (
     
-     <>
-      <Header/>
-      
+     
+    
     <div className="container">
+      <Header/>
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className="card">
@@ -130,10 +130,10 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
         </div>
       </div>
     </div>
-    </>
+    
   );
 }
 
 
 export default ProfileView;
-export  {Header};
+
