@@ -79,7 +79,7 @@ function Homepage(){
             <div className="first">
               
                
-               <Carousel>
+               <Carousel interval={null}>
       <Carousel.Item>
       <img src={img1} alt="" />
         <Carousel.Caption>
@@ -105,7 +105,7 @@ function Homepage(){
                 <button>Shiko apartamentin</button>
             </div>
             <div className="first">
-            <Carousel>
+            <Carousel interval={null}>
       <Carousel.Item>
       <img src={img4} alt="" />
         <Carousel.Caption>
@@ -130,7 +130,7 @@ function Homepage(){
                 <button><a href="buy.php">Shiko apartamentin</a></button>
             </div>
             <div className="first">
-            <Carousel>
+            <Carousel interval={null}>
       <Carousel.Item>
       <img src={img6} alt="" />
         <Carousel.Caption>
@@ -155,7 +155,7 @@ function Homepage(){
                 <button><a href="buy.php">Shiko apartamentin</a></button>
             </div>
             <div className="first">
-            <Carousel>
+            <Carousel interval={null}>
       <Carousel.Item>
       <img src={img10} alt="" />
         <Carousel.Caption>
@@ -181,7 +181,7 @@ function Homepage(){
             </div>
             <div className="first">
                 
-            <Carousel>
+            <Carousel interval={null}>
       <Carousel.Item>
       <img src={img13} alt="" />
         <Carousel.Caption>
@@ -206,7 +206,7 @@ function Homepage(){
                 <button><a href="buy.php">Shiko apartamentin</a></button>
             </div>
             <div className="first">
-            <Carousel>
+            <Carousel interval={null}>
       <Carousel.Item>
       <img src={img16} alt="" />
         <Carousel.Caption>
@@ -231,7 +231,7 @@ function Homepage(){
                 <button><a href="buy.php">Shiko apartamentin</a></button>
             </div>
             <div className="first">
-            <Carousel>
+            <Carousel interval={null}>
       <Carousel.Item>
       <img src={img19} alt="" />
         <Carousel.Caption>
@@ -256,7 +256,7 @@ function Homepage(){
                 <button><a href="buy.php">Shiko apartamentin</a></button>
             </div>
             <div className="first">
-            <Carousel>
+            <Carousel interval={null}>
       <Carousel.Item>
       <img src={img22} alt="" />
         <Carousel.Caption>
