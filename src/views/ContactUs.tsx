@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/contact.css'
+import Header from "./Header";
+
 
 function App() {
   
@@ -8,28 +10,8 @@ function App() {
  
     return (
     <div>
-      <div className="bar bg-dark text-white py-3">
-        <div className="container">
-          <h1 className="m-0">Welcome to ABODE: Where Hospitality Meets Home. Feel free to reach out to us. Your comfort is our priority.</h1>
-        </div>
-      </div>
-      <header className="sticky-top bg-light">
-        <div className="container d-flex justify-content-between align-items-center py-3">
-          
-          <div className="logo-2">
-            <a href="nav.html">
-            </a>
-          </div>
-          <nav>
-            <ul className="d-flex">
-              <li><a href="*">Home</a></li>
-              <li><a href="ContactUs.tsx">Contact</a></li>
-              <li><a href="*">About Us</a></li>
-            </ul>
-          </nav>
-         
-        </div>
-      </header>
+       <Header/>
+  
 
       <div className="contact py-5">
         <div className="container">

@@ -47,7 +47,7 @@ const Header = (props: Props) => {
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li><a href="#" className="nav-link px-2 link-secondary">Abode</a></li>
               <li><a href="#" className="nav-link px-2 link-body-emphasis"> Home</a></li>
-              <li><a href="#" className="nav-link px-2 link-body-emphasis">Contac Us</a></li>
+              <li><a href="#" className="nav-link px-2 link-body-emphasis">Contact Us</a></li>
               <li><a href="#" className="nav-link px-2 link-body-emphasis">Profile</a></li>
             </ul>
             </div>
