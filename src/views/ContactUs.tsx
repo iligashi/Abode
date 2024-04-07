@@ -37,10 +37,11 @@ function App() {
               </div>
             </div>
            <div className="con-info bg-light p-4">
-                <h3>GENERAL INFORMATION:</h3>
-                <p> Pagesat<br />
-                  65433561<br />
-                  Kosovo</p>
+                <h3>PAYMENT INFORMATION:</h3>
+                <p> 
+Methods: Credit Card<br />
+Bank Transfer <br />
+                  </p>
               </div>
           </div>
           
