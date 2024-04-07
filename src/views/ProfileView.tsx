@@ -58,6 +58,9 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
     color : 'white'
 
   };
+  const widthFix = {
+    width: 'auto'
+  };
 
   // const handleLogout = () => {
   //   console.log('Logging out...');
@@ -67,7 +70,7 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
   return (
     
      
-    
+    /* className="profile-picture-container"*/
     <div className="container">
       <Header/>
       <div className="row justify-content-center">
@@ -75,11 +78,26 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
           <div className="card">
             <div className="card-body">
               <div className="profile-header text-center">
-                <div className="profile-picture-container">
+                <div style={{width: '100%'}}> 
+                  <div style={{display:'flex', justifyContent:'space-between', width:'100%',}}>
+
+                  <div style={{display:'block'}}>
+                    
+                 
                   <img src={profileImageUrl} className="profile-picture" alt="Profile" />
+                  <div className="profile-title">
+                                    <h2>{name}</h2>
+                                  </div>
+                                   </div>
+                   <div style={{alignSelf:'start',}}>
+
+                  
                   {!isEditing && (
-                    <button className="btn btn-primary mt-2" onClick={handleEditProfile}>Edit Profile</button>
-                  )}
+                    <button className="btn btn-primary mt-2" onClick={handleEditProfile} style ={widthFix}>Edit Profile</button>
+                  )} 
+                  </div>
+
+                  </div>
                   {isEditing && (
                     <div className="change-image-button">
                       <label htmlFor="image-upload" className="btn btn-outline-primary mt-2">Change Image</label>
@@ -87,9 +105,7 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
                     </div>
                   )}
                 </div>
-                <div className="profile-title">
-                  <h2>{name}</h2>
-                </div>
+               
               </div>
               <div className="profile-body">
                 <div className="profile-info">
@@ -100,7 +116,7 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
                     <strong>Phone Number:</strong> {isEditing ? <input type="text" name="phoneNumber" value={editedInfo.phoneNumber} onChange={handleInputChange} className="form-control" /> : phoneNumber}
                   </div>
                   <div className="profile-item">
-                    <strong>Status:</strong> {status} <button className="btn btn-outline-primary btn-sm" onClick={toggleStatus}>Toggle Status</button>
+                    <strong>Status:</strong> {status} <button className="btn btn-outline-primary btn-sm" onClick={toggleStatus} style ={widthFix}>Toggle Status</button>
                   </div>
                   <div className="profile-item">
                     <strong>Bio:</strong> {isEditing ? <textarea name="bio" value={editedInfo.bio} onChange={handleInputChange} className="form-control" /> : bio}
@@ -109,13 +125,13 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
                 <div className="profile-actions">
                   {isEditing ? (
                     <>
-                      <button className="btn btn-primary mr-2" onClick={handleSave}>Save</button>
-                      <button className="btn btn-secondary" onClick={handleCancel}>Cancel</button>
+                      <button className="btn btn-primary mr-2" onClick={handleSave} style ={widthFix}>Save</button>
+                      <button className="btn btn-secondary" onClick={handleCancel} style ={widthFix}>Cancel</button>
                     </>
                   ) : (
                     <>
-                      <button className="btn btn-primary mr-2">Change Passwords</button>
-                      <button className="btn btn-primary">See Favorites</button>
+                      <button className="btn btn-primary mr-2" style ={widthFix}>Change Passwords</button>
+                      <button className="btn btn-primary" style ={widthFix}>See Favorites</button>
                     </>
                   )}
                 </div>
@@ -124,7 +140,7 @@ const ProfileView: React.FC<Props> = ({ name, email, bio, phoneNumber, profileIm
           </div>
           {!isEditing && (
             <div className="text-center mt-3">
-              <button className="btn btn-danger"><Link style={linkStyle} to="/login" >Log Out</Link></button>
+              <button className="btn btn-danger"  style ={widthFix}><Link style={linkStyle} to="/login">Log Out</Link></button>
             </div>
           )}
         </div>
