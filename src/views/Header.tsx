@@ -1,4 +1,5 @@
 import React,  { useEffect, useState } from "react";
+import AbodeLogo from "../Images/AbodeLogo.png";
 
 
 interface Props {}
@@ -44,11 +45,11 @@ const Header = (props: Props) => {
               <svg className="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlinkHref="#bootstrap"></use></svg>
             </a>
   
-            <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" className="nav-link px-2 link-secondary">Abode</a></li>
-              <li><a href="#" className="nav-link px-2 link-body-emphasis"> Home</a></li>
-              <li><a href="#" className="nav-link px-2 link-body-emphasis">Contac Us</a></li>
-              <li><a href="#" className="nav-link px-2 link-body-emphasis">Profile</a></li>
+            <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style={{alignItems:'center',}}>
+              <li><a href="/home" ><img style={{width:'120px',}} src={AbodeLogo} alt="" /></a></li>
+              <li><a href="/home" className="nav-link px-2 link-body-emphasis"> Home</a></li>
+              <li><a href="/contactus" className="nav-link px-2 link-body-emphasis">Contact Us</a></li>
+              <li><a href="/profile" className="nav-link px-2 link-body-emphasis">Profile</a></li>
             </ul>
             </div>
            

@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from '../App';
 import Homepage from '../views/Homepage';
 import LoginView from '../views/LoginView';
-import Contact from '../views/contactformTEST/contact-form-07/contact';
+import ContactUs from '../views/ContactUs';
+
 
 export const router = (
   <BrowserRouter>
@@ -10,7 +11,8 @@ export const router = (
       <Route path="/" element={<App />} />
       <Route path="/home" element={<Homepage />} />
       <Route path="/login" element={<LoginView />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/company" element={<ContactUs />} />
+  
     </Routes>
   </BrowserRouter>
 );

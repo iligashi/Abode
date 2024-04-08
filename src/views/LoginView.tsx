@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Houses from "../Images/houses.jpeg";
 
+
 interface Props {}
 
 const LoginView = (props: Props) => {
@@ -79,7 +80,9 @@ const LoginView = (props: Props) => {
           alignSelf: "center",
         }}
       >
-        <h2 style={h2}> Login to Abode</h2>
+        
+             <h2 style={h2}> Login to Abode </h2>
+
         <div style={divStyle}>
           <div style={{ padding: "2px" }}>
             <input style={input} type="text" placeholder="Email" name="email" />
