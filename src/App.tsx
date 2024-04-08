@@ -4,6 +4,8 @@ import LoginView from './views/LoginView';
 import ContactUs from './views/ContactUs';
 import ProfileView from './views/ProfileView';
 import SignUp from './views/SignUp';
+// import ContactForm from './views/contactform/contact';
+
 
 const App: React.FC = () => {
 	return (
@@ -13,19 +15,23 @@ const App: React.FC = () => {
 				<Route path="login" element={<LoginView />} />
 				<Route path="contactus" element={<ContactUs />} />
 				<Route path='signup' element={<SignUp />} />	
-				
-				
-				<Route
+				{/* <Route path='contact' element={<ContactForm/>}/> */}
+  <Route
+    path="profile"
+    element={<ProfileView 
+      name="Ilaz" 
+      surname="Gashi" 
+      email="ili@gmail.com" 
+      bio="Admin of the abode" 
+      phoneNumber="+1234567890" 
+      profileImageUrl={require('./Images/ili.jpg')} 
+      status="Active" 
+    />} 
+  />
+</Routes>
 
-
-
-
-					path="profile"
-					element={<ProfileView name="Ilaz Gashi" email="ili@gmail.com" bio="Admin of the abode" phoneNumber="+1234567890" profileImageUrl={require('./Images/ili.jpg')} status="Active" />} />
-				
-
-			</Routes>
 		</BrowserRouter>
 	);
+
 };
 export default App;
