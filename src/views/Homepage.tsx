@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import './css/home.css';
-import outputOnlinePngToolsImage from "../Images/output-onlinepngtools.png"; 
 import img1 from "../Images/1.jpg";
 import img2 from "../Images/2.jpg";
 import img3 from "../Images/3.jpg";
@@ -253,29 +252,29 @@ function Homepage(){
               <div>
                 <h3>Stay connected with ABODE</h3>
                 <div className="icons">
-                  //img
+              
                 </div>
                 <h2>Mundësuar nga Abode, Inc.</h2>
                 <h5>Të gjitha të drejtat e rezervuara</h5>
-                <a href="">Kushtet e përdorimit – </a>
-                <a href="">Politika e Privatësisë</a>
+                <p>Kushtet e përdorimit – </p>
+                <p>Politika e Privatësisë</p>
               </div>
             </div>
             <div className="col-md-3 mb-4 mb-md-0">
               <div>
                 <h3>Llogaria</h3>
-                <a href="">Rezervimet</a>
-                <a href="">Lista e deshirave</a>
-                <a href="">Llogaria ime</a>
+                <p>Rezervimet</p>
+                <p>Lista e deshirave</p>
+                <p>Llogaria ime</p>
               </div>
             </div>
             <div className="col-md-3">
               <div>
                 <h3>Kontakti</h3>
-                <a href="">info@gmail.com</a>
-                <a href="">Tel:+383 045 883 702</a>
-                <a href="">Prishtinë, Kosovë</a>
-                <a href="">.......</a>
+                <p>info@gmail.com</p>
+                <p>Tel:+383 045 883 702</p>
+                <p>Prishtinë, Kosovë</p>
+                <p>.......</p>
               </div>
             </div>
           </div>
