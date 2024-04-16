@@ -17,6 +17,8 @@ const ProfileView: React.FC<Props> = ({ name, surname, email, bio, phoneNumber, 
   const [status, setStatus] = useState(initialStatus);
   const [isEditing, setIsEditing] = useState(false);
   const [editedInfo, setEditedInfo] = useState({ name, surname, email, bio, phoneNumber });
+  const [oldPassword, setOldPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
 
   const toggleStatus = () => {
     setStatus(status === 'Active' ? 'Sleepy' : 'Active');
@@ -53,6 +55,14 @@ const ProfileView: React.FC<Props> = ({ name, surname, email, bio, phoneNumber, 
       };
       reader.readAsDataURL(file);
     }
+  };
+
+  const handleChangePassword = () => {
+    // Send a request to update the password to the backend
+    console.log('Changing password...');
+    // Reset password fields after changing
+    setOldPassword('');
+    setNewPassword('');
   };
 
   const linkStyle = {
@@ -114,6 +124,17 @@ const ProfileView: React.FC<Props> = ({ name, surname, email, bio, phoneNumber, 
                   <div className="profile-item">
                     <strong>Bio:</strong> {isEditing ? <textarea name="bio" value={editedInfo.bio} onChange={handleInputChange} className="form-control" /> : bio}
                   </div>
+                  {/* Add input fields for old password and new password */}
+                  {isEditing && (
+                    <>
+                      <div className="profile-item">
+                        <strong>Old Password:</strong> <input type="password" name="oldPassword" value={oldPassword} onChange={(e) => setOldPassword(e.target.value)} className="form-control" />
+                      </div>
+                      <div className="profile-item">
+                        <strong>New Password:</strong> <input type="password" name="newPassword" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} className="form-control" />
+                      </div>
+                    </>
+                  )}
                 </div>
                 <div className="profile-actions">
                   {isEditing ? (
@@ -123,7 +144,8 @@ const ProfileView: React.FC<Props> = ({ name, surname, email, bio, phoneNumber, 
                     </>
                   ) : (
                     <>
-                      <button className="btn btn-primary mr-2" style={widthFix}>Change Passwords</button>
+                      {/* Add onClick handler for changing password */}
+                      <button className="btn btn-primary mr-2" onClick={handleChangePassword} style={widthFix}>Change Password</button>
                       <button className="btn btn-primary" style={widthFix}>See Favorites</button>
                     </>
                   )}
