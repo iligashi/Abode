@@ -6,7 +6,7 @@ USE adobe;
 CREATE TABLE contact (
 id int IDENTITY(1,1) PRIMARY KEY,
 fname varchar(50) NOT NULL,
-  lname varchar(50) NOT NULL,
+  lname varchar(50) NOT NULL, 
   email varchar(255) NOT NULL,
   subject text NOT NULL
 )
@@ -16,12 +16,6 @@ fname varchar(50) NOT NULL,
 
 
 
-INSERT INTO contact (fname, lname, email, subject) VALUES
-('John', 'Doe', 'john.doe@example.com', 'Inquiry about product availability'),
-('Jane', 'Smith', 'jane.smith@example.com', 'Request for quotation'),
-('Mike', 'Johnson', 'mike.johnson@example.com', 'Feedback on customer service'),
-('Emily', 'Brown', 'emily.brown@example.com', 'Technical support request'),
-('David', 'Lee', 'david.lee@example.com', 'General inquiry');
 
 
 CREATE TABLE UserProfile (
@@ -42,3 +36,47 @@ VALUES
 
 
 SELECT * FROM UserProfile;
+
+
+CREATE TABLE Property (
+    PropertyID INT PRIMARY KEY,
+    Address VARCHAR(255),
+    City VARCHAR(100),
+    State VARCHAR(50),
+    ZIP VARCHAR(20),
+    Type VARCHAR(50),
+    Bedrooms INT,
+    Bathrooms INT,
+    Price DECIMAL(15, 2),
+    SquareFeet INT
+);
+
+CREATE TABLE Agent (
+    AgentID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100),
+    Phone VARCHAR(20)
+);
+
+CREATE TABLE Client (
+    ClientID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100),
+    Phone VARCHAR(20)
+);
+
+CREATE TABLE Transaksion (
+    TransactionID INT PRIMARY KEY,
+    PropertyID INT,
+    BuyerID INT,
+    SellerID INT,
+    AgentID INT,
+    TransactionDate DATE,
+    Price DECIMAL(15, 2),
+    FOREIGN KEY (PropertyID) REFERENCES Property(PropertyID),
+    FOREIGN KEY (BuyerID) REFERENCES Client(ClientID),
+    FOREIGN KEY (SellerID) REFERENCES Client(ClientID),
+    FOREIGN KEY (AgentID) REFERENCES Agent(AgentID)
+);
