@@ -3384,26 +3384,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\": {}
+    "/Users/lrb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\Projekt\\Abode\\Abode\\abode.csproj",
+      "projectUniqueName": "/Users/lrb/Desktop/Abode/abode/abode.csproj",
       "projectName": "abode",
-      "projectPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\Abode\\abode.csproj",
-      "packagesPath": "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\Abode\\obj\\",
+      "projectPath": "/Users/lrb/Desktop/Abode/abode/abode.csproj",
+      "packagesPath": "/Users/lrb/.nuget/packages/",
+      "outputPath": "/Users/lrb/Desktop/Abode/abode/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC-SYSTEMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/lrb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3463,7 +3461,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
