@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\abode\\abode\\abode.csproj": {}
+    "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\abode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\abode\\abode\\abode.csproj": {
+    "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\abode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\abode\\abode\\abode.csproj",
+        "projectUniqueName": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\abode.csproj",
         "projectName": "abode",
-        "projectPath": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\abode\\abode\\abode.csproj",
-        "packagesPath": "C:\\Users\\artin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\abode\\abode\\obj\\",
+        "projectPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\abode.csproj",
+        "packagesPath": "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\",
+        "outputPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\artin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\PC-SYSTEMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,6 +48,24 @@
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -82,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
