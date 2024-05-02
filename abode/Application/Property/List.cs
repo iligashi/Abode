@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Domain;
+//using Domain;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Persistance;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+//using Persistance;
 
 namespace Application.Allergies
 {

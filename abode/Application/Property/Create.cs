@@ -1,9 +1,9 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Domain;
+using Volo.Abp.Domain;
 using MediatR;
 using Org.BouncyCastle.Asn1.Ocsp;
-using Persistance;
+//using Persistance;
 
 namespace Application.Allergies
 {

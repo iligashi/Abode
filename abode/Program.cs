@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<AbodeContext>(options =>
 {
     {
-        options.UseSqlServer(builder.Configuration.GetConnectionString("ContactAppCon"));
+        options.UseSqlServer(builder.Configuration.GetConnectionString("Server=DESKTOP-H974K9N\\SQLEXPRESS;Database=adobe;Integrated Security=True;TrustServerCertificate=True;"));
     };
 });
 

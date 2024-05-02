@@ -1,39 +1,52 @@
 ﻿<Properties StartupConfiguration="{E250CAD3-7085-42E5-A3BC-E7FD602B9063}|http">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.abode PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="abode/appsettings.Development.json">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../lab-1/WorkingwithSQLLiteinAsp.NETCoreWebAPI/Program.cs">
     <Files>
-      <File FileName="abode/Startup.cs" Line="12" Column="37" />
+      <File FileName="abode/Startup.cs" Line="1" Column="1" />
       <File FileName="../../../../usr/local/share/dotnet/sdk/7.0.314/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" />
-      <File FileName="abode/abode.http" Line="7" Column="1" />
-      <File FileName="abode/appsettings.json" />
-      <File FileName="abode/Program.cs" />
-      <File FileName="abode/Controllers/ContactController.cs" Line="74" Column="7" />
-      <File FileName="abode/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
-      <File FileName="abode/appsettings.Development.json" Line="10" Column="6" />
+      <File FileName="abode/abode.http" />
+      <File FileName="abode/appsettings.json" Line="4" Column="40" />
+      <File FileName="abode/Program.cs" Line="13" Column="7" />
+      <File FileName="abode/Controllers/ContactController.cs" />
+      <File FileName="abode/Controllers/WeatherForecastController.cs" />
+      <File FileName="abode/appsettings.Development.json" />
+      <File FileName="abode/Controllers/AbodeController.cs" />
+      <File FileName="abode/Controllers/PropertyController.cs" />
+      <File FileName="abode/Models/AbodeContext.cs" />
+      <File FileName="abode/Models/PropertyClass.cs" Line="13" Column="42" />
+      <File FileName="abode/Properties/launchSettings.json" />
+      <File FileName="abode/Application/Property/Create.cs" Line="1" Column="1" />
+      <File FileName="abode/Application/Property/Edit.cs" Line="1" Column="1" />
+      <File FileName="abode/Application/Property/List.cs" Line="32" Column="2" />
+      <File FileName="abode/Migrations/AbodeContextModelSnapshot.cs" />
+      <File FileName="abode/Models/Abode.cs" />
+      <File FileName="abode/Models/AbodeController.cs" />
+      <File FileName="abode/Application/Property/Delete.cs" />
+      <File FileName="abode/Models/contact.cs" />
+      <File FileName="abode/Models/SchoolContext.cs" />
+      <File FileName="abode/Models/Student.cs" />
+      <File FileName="../lab-1/WorkingwithSQLLiteinAsp.NETCoreWebAPI/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="abode" expanded="True">
             <Node name="abode" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-                <Node name="SdkDependencies" expanded="True" />
+              <Node name="Application" expanded="True" selected="True">
+                <Node name="Property" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="appsettings.json" expanded="True">
-                <Node name="appsettings.Development.json" selected="True" />
-              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
