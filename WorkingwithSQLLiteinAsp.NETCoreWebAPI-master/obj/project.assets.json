@@ -1758,11 +1758,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\Projekt\\Abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
       "projectName": "WorkingwithSQLLiteinAsp.NETCoreWebAPI",
-      "projectPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
       "packagesPath": "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC-SYSTEMS\\AppData\\Roaming\\NuGet\\NuGet.Config",

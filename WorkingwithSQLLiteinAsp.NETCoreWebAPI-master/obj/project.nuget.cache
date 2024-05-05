@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LNu1WtxOfE2jhTy/hArU0Ycn1VpwRoMPXBe/qpINHeWz2YskRvzJn0RH46zNlfB2xzeFAPe7xDKmzgqFGx2gKg==",
+  "dgSpecHash": "88p6aG0TUbEGIwkBDZjiysv8xby1/SkNitKd+zRqCYfH7EASTCfCsv/jcdXj1KY3rsIOHdfLeaGknLgefT49Zw==",
   "success": true,
-  "projectFilePath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\Projekt\\Abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.5\\microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",

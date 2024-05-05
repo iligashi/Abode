@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 
@@ -9,6 +10,12 @@ var configuration = builder.Configuration;
 builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
+
+builder.Services.AddDbContext<UserDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
