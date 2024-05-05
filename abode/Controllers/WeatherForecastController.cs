@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models;
 
-namespace abode.Controllers
+namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -8,8 +9,8 @@ namespace abode.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
