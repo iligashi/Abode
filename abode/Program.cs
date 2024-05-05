@@ -14,6 +14,9 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<UserDbContext>(options =>
        options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddDbContext<PropertyDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
