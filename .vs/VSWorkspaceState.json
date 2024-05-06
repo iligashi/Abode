@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\abode",
+    "\\abode\\Controllers",
+    "\\abode\\Models",
+    "\\abode\\obj"
   ],
   "PreviewInSolutionExplorer": false
 }
