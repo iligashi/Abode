@@ -23,6 +23,12 @@ builder.Services.AddDbContext<CommercialListingDbContext>(options =>
     builder.Services.AddDbContext<LandListingDbContext>(options =>
        options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddDbContext<PropertyRentDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<PropertySaleDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
