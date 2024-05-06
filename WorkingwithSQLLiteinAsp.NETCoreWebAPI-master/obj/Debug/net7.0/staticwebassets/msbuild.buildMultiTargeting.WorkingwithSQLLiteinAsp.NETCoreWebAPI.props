@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WorkingwithSQLLiteinAsp.NETCoreWebAPI.props" />
+</Project>

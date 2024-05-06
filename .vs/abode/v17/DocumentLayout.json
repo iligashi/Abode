@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\abode\\abode\\obj\\Release\\net8.0\\abode.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\obj\\Release\\net8.0\\abode.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Models\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropetyController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\PropetyController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\obj\\Debug\\net8.0\\abode.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\DatabaseTestController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\DatabaseTestController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -47,24 +47,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\contactController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\contactController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\abode.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\abode.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\abode.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\abode.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -78,11 +62,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "abode\\Models\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\WeatherForecast.cs",
+              "RelativeToolTip": "abode\\Models\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:55:20.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PropetyController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropetyController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\PropetyController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropetyController.cs",
+              "RelativeToolTip": "abode\\Controllers\\PropetyController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:53:12.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "abode.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\obj\\Debug\\net8.0\\abode.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "abode\\obj\\Debug\\net8.0\\abode.AssemblyInfo.cs",
@@ -91,31 +100,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T18:37:51.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "abode.AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\obj\\Release\\net8.0\\abode.AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "abode\\obj\\Release\\net8.0\\abode.AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\obj\\Release\\net8.0\\abode.AssemblyInfo.cs",
-              "RelativeToolTip": "abode\\obj\\Release\\net8.0\\abode.AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T18:34:49.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Startup.cs",
-              "RelativeDocumentMoniker": "abode\\Startup.cs",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Startup.cs",
-              "RelativeToolTip": "abode\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T00:02:02.188Z"
             },
             {
               "$type": "Document",
@@ -132,18 +116,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "contact.cs",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\contact.cs",
-              "RelativeDocumentMoniker": "abode\\Models\\contact.cs",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\contact.cs",
-              "RelativeToolTip": "abode\\Models\\contact.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T16:04:28.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs",
               "RelativeDocumentMoniker": "abode\\Program.cs",
@@ -155,19 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "contactController.cs",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\ContactController.cs",
-              "RelativeDocumentMoniker": "abode\\Controllers\\ContactController.cs",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\ContactController.cs",
-              "RelativeToolTip": "abode\\Controllers\\ContactController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T00:28:51.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DatabaseTestController.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\DatabaseTestController.cs",
               "RelativeDocumentMoniker": "abode\\Controllers\\DatabaseTestController.cs",
@@ -179,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DatabaseTester.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\DatabaseTester.cs",
               "RelativeDocumentMoniker": "abode\\Models\\DatabaseTester.cs",
@@ -203,18 +163,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "abode.http",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\abode.http",
-              "RelativeDocumentMoniker": "abode\\abode.http",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\abode.http",
-              "RelativeToolTip": "abode\\abode.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-04-11T00:33:20.063Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
               "Title": "test.txt",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\test.txt",
@@ -224,18 +172,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-04-11T15:32:51.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "abode.csproj",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\abode.csproj",
-              "RelativeDocumentMoniker": "abode\\abode.csproj",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\abode.csproj",
-              "RelativeToolTip": "abode\\abode.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-09T21:28:46.664Z"
             },
             {
               "$type": "Document",
@@ -275,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 12,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\appsettings.Development.json",
               "RelativeDocumentMoniker": "abode\\appsettings.Development.json",
