@@ -7,7 +7,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext
     {
         public PropertyRentDbContext(DbContextOptions<PropertyRentDbContext> options) : base(options) { }
 
-        public DbSet<PropertyRent> Properties { get; set; }
+        public DbSet<PropertyRent> Rent { get; set; }
 
         // DbSet properties for any related entities (PropertyRent, PropertySale, etc.) if applicable
 
