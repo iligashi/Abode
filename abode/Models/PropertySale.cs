@@ -9,6 +9,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
     // Property model
     public class PropertySale
     {
+        [Key]
         public int SaleID { get; set; }
         public int PropertyID { get; set; }
         public int BuyerID { get; set; }
