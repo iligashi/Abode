@@ -12,49 +12,49 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
     [Route("api/[controller]")]
     public class PropertySaleController : ControllerBase
     {
-        private readonly PropertyDbContext _context;
+        private readonly PropertySaleDbContext _context;
 
-        public PropertySaleController(PropertyDbContext context)
+        public PropertySaleController(PropertySaleDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Property
+        // GET: api/PropertySale
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Property>>> GetProperties()
+        public async Task<ActionResult<IEnumerable<PropertySale>>> GetProperties()
         {
-            return await _context.Properties.ToListAsync();
+            return await _context.Sale.ToListAsync();
         }
 
-        // GET: api/Property/5
+        // GET: api/PropertySale/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Property>> GetProperty(int id)
+        public async Task<ActionResult<PropertySale>> GetProperty(int id)
         {
-            var property = await _context.Properties.FindAsync(id);
+            var propertySale = await _context.Sale.FindAsync(id);
 
-            if (property == null)
+            if (propertySale == null)
             {
                 return NotFound();
             }
 
-            return property;
+            return propertySale;
         }
 
-        // POST: api/Property
+        // POST: api/PropertySale
         [HttpPost]
-        public async Task<ActionResult<Property>> PostProperty(Property property)
+        public async Task<ActionResult<PropertySale>> PostProperty(PropertySale property)
         {
-            _context.Properties.Add(property);
+            _context.Sale.Add(property);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetProperty), new { id = property.PropertyID }, property);
+            return CreatedAtAction(nameof(GetProperty), new { id = property.SaleID }, property);
         }
 
-        // PUT: api/Property/5
+        // PUT: api/PropertySale/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProperty(int id, Property property)
+        public async Task<IActionResult> PutProperty(int id, PropertySale property)
         {
-            if (id != property.PropertyID)
+            if (id != property.SaleID)
             {
                 return BadRequest();
             }
@@ -80,17 +80,17 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Property/5
+        // DELETE: api/PropertySale/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProperty(int id)
         {
-            var property = await _context.Properties.FindAsync(id);
+            var property = await _context.Sale.FindAsync(id);
             if (property == null)
             {
                 return NotFound();
             }
 
-            _context.Properties.Remove(property);
+            _context.Sale.Remove(property);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -98,7 +98,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         private bool PropertyExists(int id)
         {
-            return _context.Properties.Any(e => e.PropertyID == id);
+            return _context.Sale.Any(e => e.SaleID == id);
         }
     }
 }

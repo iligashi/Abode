@@ -12,49 +12,49 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
     [Route("api/[controller]")]
     public class PropertyRentController : ControllerBase
     {
-        private readonly PropertyDbContext _context;
+        private readonly PropertyRentDbContext _context;
 
-        public PropertyRentController(PropertyDbContext context)
+        public PropertyRentController(PropertyRentDbContext context)
         {
             _context = context;
         }
 
-        // GET: api/Property
+        // GET: api/PropertyRent
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Property>>> GetProperties()
+        public async Task<ActionResult<IEnumerable<PropertyRent>>> GetProperties()
         {
-            return await _context.Properties.ToListAsync();
+            return await _context.Rent.ToListAsync();
         }
 
-        // GET: api/Property/5
+        // GET: api/PropertyRent/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Property>> GetProperty(int id)
+        public async Task<ActionResult<PropertyRent>> GetProperty(int id)
         {
-            var property = await _context.Properties.FindAsync(id);
+            var propertyRent = await _context.Rent.FindAsync(id);
 
-            if (property == null)
+            if (propertyRent == null)
             {
                 return NotFound();
             }
 
-            return property;
+            return propertyRent;
         }
 
-        // POST: api/Property
+        // POST: api/PropertyRent
         [HttpPost]
-        public async Task<ActionResult<Property>> PostProperty(Property property)
+        public async Task<ActionResult<PropertyRent>> PostProperty(PropertyRent property)
         {
-            _context.Properties.Add(property);
+            _context.Rent.Add(property);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetProperty), new { id = property.PropertyID }, property);
+            return CreatedAtAction(nameof(GetProperty), new { id = property.RentID }, property);
         }
 
-        // PUT: api/Property/5
+        // PUT: api/PropertyRent/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProperty(int id, Property property)
+        public async Task<IActionResult> PutProperty(int id, PropertyRent property)
         {
-            if (id != property.PropertyID)
+            if (id != property.RentID)
             {
                 return BadRequest();
             }
@@ -80,17 +80,17 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Property/5
+        // DELETE: api/PropertyRent/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProperty(int id)
         {
-            var property = await _context.Properties.FindAsync(id);
+            var property = await _context.Rent.FindAsync(id);
             if (property == null)
             {
                 return NotFound();
             }
 
-            _context.Properties.Remove(property);
+            _context.Rent.Remove(property);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -98,7 +98,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         private bool PropertyExists(int id)
         {
-            return _context.Properties.Any(e => e.PropertyID == id);
+            return _context.Rent.Any(e => e.RentID == id);
         }
     }
 }
