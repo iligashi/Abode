@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "zEqGPyTBMTI2cFUUm9O6SZpSvznVFlzHQV3QAdQ7Kw4DiRXgf0AKY9yk1bseqt0HmOkP8cT8kIyKEmpkDU2usQ==",
+=======
+  "dgSpecHash": "oi2j0oMtZWEAsq5f49TVhiZ5ntIgPrm0Dl+YHILZfnCl4aOPBv2vun8bS3t2nv/rurIPnrlUqXVFwfEK0czvcQ==",
+>>>>>>> 429cef539cdce5e89e0577704fb1ece127d06b79
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
   "expectedPackageFiles": [
