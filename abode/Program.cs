@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.OpenApi.Models;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
+using YourNamespace.ApplicationDbContext;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
@@ -15,6 +16,17 @@ builder.Services.AddDbContext<UserDbContext>(options =>
        options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddDbContext<PropertyDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<CommercialListingDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
+    builder.Services.AddDbContext<LandListingDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<PropertyRentDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddDbContext<PropertySaleDbContext>(options =>
        options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddDbContext<PropertyHousesDbContext>(options =>
