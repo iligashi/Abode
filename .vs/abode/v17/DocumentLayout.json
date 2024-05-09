@@ -3,12 +3,132 @@
   "WorkspaceRootPath": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Models\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertyHousesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\PropertyHousesController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyHousesDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\ApplicationDbContext\\PropertyHousesDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyRentDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\ApplicationDbContext\\PropertyRentDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertyHouses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\Models\\PropertyHouses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\ApplicationDbContext\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\CommercialListing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\Models\\CommercialListing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertyRent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\Models\\PropertyRent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\Property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\Models\\Property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertySale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\Models\\PropertySale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropetyController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\PropetyController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertySaleController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\PropertySaleController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertyRentController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\PropertyRentController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\LandListing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\Models\\LandListing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\PropertyDb\\PropertyDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\PropertyDb\\PropertyDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\AppDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\AppDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\LandListingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\LandListingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\LandListingDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\ApplicationDbContext\\LandListingDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\ApplicationDbContext\\PropertyDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertySaleDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\ApplicationDbContext\\PropertySaleDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\CommercialListingDb\\20240506231107_CommercialListing.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\CommercialListingDb\\20240506231107_CommercialListing.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\CommercialListingDb\\CommercialListingDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\CommercialListingDb\\CommercialListingDbContextModelSnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\CommercialListingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\CommercialListingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\TodoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\TodoController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\.editorconfig||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.editorconfig||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\SQLLiteDatabase.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\SQLLiteDatabase.db||{25834150-CD7E-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\userDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\ApplicationDbContext\\userDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Migrations\\Models\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\obj\\Debug\\net8.0\\abode.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +167,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:abode\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -62,36 +178,395 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "abode\\Models\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\WeatherForecast.cs",
-              "RelativeToolTip": "abode\\Models\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "abode\\ApplicationDbContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\AppDbContext.cs",
+              "RelativeToolTip": "abode\\ApplicationDbContext\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T18:55:20.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-08T11:34:31.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PropertyHousesDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyHousesDbContext.cs",
+              "RelativeDocumentMoniker": "abode\\ApplicationDbContext\\PropertyHousesDbContext.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyHousesDbContext.cs",
+              "RelativeToolTip": "abode\\ApplicationDbContext\\PropertyHousesDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:38:47.063Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PropertyHousesController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertyHousesController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\PropertyHousesController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertyHousesController.cs",
+              "RelativeToolTip": "abode\\Controllers\\PropertyHousesController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAB8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:42:23.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PropertyHouses.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertyHouses.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\Models\\PropertyHouses.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertyHouses.cs",
+              "RelativeToolTip": "abode\\Migrations\\Models\\PropertyHouses.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAABAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:06:46.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PropertyRentDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyRentDbContext.cs",
+              "RelativeDocumentMoniker": "abode\\ApplicationDbContext\\PropertyRentDbContext.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyRentDbContext.cs",
+              "RelativeToolTip": "abode\\ApplicationDbContext\\PropertyRentDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:36:54.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs",
+              "RelativeDocumentMoniker": "abode\\Program.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs",
+              "RelativeToolTip": "abode\\Program.cs",
+              "ViewState": "AQIAACAAAAAgMzMzMzMrwA4AAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T00:32:38.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+              "RelativeDocumentMoniker": "abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+              "RelativeToolTip": "abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAuwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-08T11:43:10.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommercialListing.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\CommercialListing.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\Models\\CommercialListing.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\CommercialListing.cs",
+              "RelativeToolTip": "abode\\Migrations\\Models\\CommercialListing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:52:35.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj.user",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj.user",
+              "RelativeDocumentMoniker": "WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj.user",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj.user",
+              "RelativeToolTip": "WorkingwithSQLLiteinAsp.NETCoreWebAPI-master\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj.user",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-05-08T23:38:42.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-05-08T12:13:38.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PropertySale.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertySale.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\Models\\PropertySale.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertySale.cs",
+              "RelativeToolTip": "abode\\Migrations\\Models\\PropertySale.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:06:27.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PropertyRent.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertyRent.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\Models\\PropertyRent.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\PropertyRent.cs",
+              "RelativeToolTip": "abode\\Migrations\\Models\\PropertyRent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:06:25.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "PropetyController.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropetyController.cs",
               "RelativeDocumentMoniker": "abode\\Controllers\\PropetyController.cs",
               "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropetyController.cs",
               "RelativeToolTip": "abode\\Controllers\\PropetyController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T18:53:12.057Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
+              "Title": "Property.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\Property.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\Models\\Property.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\Property.cs",
+              "RelativeToolTip": "abode\\Migrations\\Models\\Property.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:13:57.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PropertySaleController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertySaleController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\PropertySaleController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertySaleController.cs",
+              "RelativeToolTip": "abode\\Controllers\\PropertySaleController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:46:53.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PropertyRentController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertyRentController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\PropertyRentController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\PropertyRentController.cs",
+              "RelativeToolTip": "abode\\Controllers\\PropertyRentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:42:29.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LandListing.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\LandListing.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\Models\\LandListing.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\LandListing.cs",
+              "RelativeToolTip": "abode\\Migrations\\Models\\LandListing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T23:06:24.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PropertyDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\PropertyDb\\PropertyDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\PropertyDb\\PropertyDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\PropertyDb\\PropertyDbContextModelSnapshot.cs",
+              "RelativeToolTip": "abode\\Migrations\\PropertyDb\\PropertyDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:30:37.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "abode\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:50:29.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LandListingController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\LandListingController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\LandListingController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\LandListingController.cs",
+              "RelativeToolTip": "abode\\Controllers\\LandListingController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAABQvQAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T22:46:25.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PropertySaleDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertySaleDbContext.cs",
+              "RelativeDocumentMoniker": "abode\\ApplicationDbContext\\PropertySaleDbContext.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertySaleDbContext.cs",
+              "RelativeToolTip": "abode\\ApplicationDbContext\\PropertySaleDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T12:06:13.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LandListingDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\LandListingDbContext.cs",
+              "RelativeDocumentMoniker": "abode\\ApplicationDbContext\\LandListingDbContext.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\LandListingDbContext.cs",
+              "RelativeToolTip": "abode\\ApplicationDbContext\\LandListingDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T12:06:09.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20240506231107_CommercialListing.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\CommercialListingDb\\20240506231107_CommercialListing.Designer.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\CommercialListingDb\\20240506231107_CommercialListing.Designer.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\CommercialListingDb\\20240506231107_CommercialListing.Designer.cs",
+              "RelativeToolTip": "abode\\Migrations\\CommercialListingDb\\20240506231107_CommercialListing.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:26:11.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PropertyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyDbContext.cs",
+              "RelativeDocumentMoniker": "abode\\ApplicationDbContext\\PropertyDbContext.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\PropertyDbContext.cs",
+              "RelativeToolTip": "abode\\ApplicationDbContext\\PropertyDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:34:22.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CommercialListingDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\CommercialListingDb\\CommercialListingDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\CommercialListingDb\\CommercialListingDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\CommercialListingDb\\CommercialListingDbContextModelSnapshot.cs",
+              "RelativeToolTip": "abode\\Migrations\\CommercialListingDb\\CommercialListingDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAEoAAAAAMzMzMzMbwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:25:45.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CommercialListingController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\CommercialListingController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\CommercialListingController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\CommercialListingController.cs",
+              "RelativeToolTip": "abode\\Controllers\\CommercialListingController.cs",
+              "ViewState": "AQIAAB8AAAAAMzMzMzMrwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:25:13.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TodoController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\TodoController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\TodoController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\TodoController.cs",
+              "RelativeToolTip": "abode\\Controllers\\TodoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T21:22:08.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": ".editorconfig",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\.editorconfig",
+              "RelativeDocumentMoniker": ".editorconfig",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\.editorconfig",
+              "RelativeToolTip": ".editorconfig",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-08T12:13:44.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SQLLiteDatabase.db",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\SQLLiteDatabase.db",
+              "RelativeDocumentMoniker": "abode\\SQLLiteDatabase.db",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\SQLLiteDatabase.db",
+              "RelativeToolTip": "abode\\SQLLiteDatabase.db",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI8SURBVDhPdVNLT1NBGD3a23gJKaJUwsIEUaMoL2NsGyqxoCYEDRuKi0ZW3WHkL0D8BWqkJsLKQlsX9bGrNhqqRKRutCVp1BhFEiUxVyVx0Ud67/DN3EcvsZ7ck2/uN9/MnDkzswsGYrEY0xgD0zQwippGbabBzPEoORxb5Upl6Nrk5HsxiBeaWFhcZKqqWqxyVmuMx\u002BOsUCiwufn5P3dmI6eMYdhtRLEKh0pRVTlVQZpIkMPtduOs398sSdKSSBBqE5hqKJBovW1B/49Go0ilUihXys0iQZCMKPbMYQ7OrmaRza7C6/PBRxwbC4oe8gGzkYio4bApIPOM9v3oAppa23DpSgiyuw13781ZfRwa1ZqwJuAu86p8Lg//uQA6D7cjt/IKPUcOof/CMNbyearSp6HjEpHjHxMzmSU0NjTgUTKJUCiEJw\u002BT2OtyUT5DKkXJjtPbqYAQGBxEsVhEcHwciUQCl0dHsf5tA1W5CS\u002BWV1AqlcivOlvQZTH09vTi9fJLfF7fgGcggHcfvkBpbEc4HIay/zje5tb\u002Bp0A3kXPi6gSUzR94/CCON3Qaw8da8PzrX4x0HsD3n7/rm1i7BxSJHq8X16em4OnrRvrTL1zscOHpRwVn\u002Brrqmyjugf4JmjjdfQL7lALSz9Locm7hYGuL5ReHTUFNlgAVcVV7ZBlDA/0IjpzHyaMdkOnfXmvzgN9BenGSQ6dTgrMORa1tC9ZzvnnrNm2NjKROvjI/KhGNnFiA2vozZ7gxM01jgW0oG0\u002BFgH6cagAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-05-08T11:39:54.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "abode\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\UserController.cs",
+              "RelativeToolTip": "abode\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:35:38.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "userDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\userDbContext.cs",
+              "RelativeDocumentMoniker": "abode\\ApplicationDbContext\\userDbContext.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\ApplicationDbContext\\userDbContext.cs",
+              "RelativeToolTip": "abode\\ApplicationDbContext\\userDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T11:34:27.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "abode\\Migrations\\Models\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Migrations\\Models\\WeatherForecast.cs",
+              "RelativeToolTip": "abode\\Migrations\\Models\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:55:20.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "abode.AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\obj\\Debug\\net8.0\\abode.AssemblyInfo.cs",
               "RelativeDocumentMoniker": "abode\\obj\\Debug\\net8.0\\abode.AssemblyInfo.cs",
@@ -103,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 40,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "abode\\Properties\\launchSettings.json",
@@ -115,43 +590,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs",
-              "RelativeDocumentMoniker": "abode\\Program.cs",
-              "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Program.cs",
-              "RelativeToolTip": "abode\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T00:32:38.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 34,
               "Title": "DatabaseTestController.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\DatabaseTestController.cs",
               "RelativeDocumentMoniker": "abode\\Controllers\\DatabaseTestController.cs",
               "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Controllers\\DatabaseTestController.cs",
               "RelativeToolTip": "abode\\Controllers\\DatabaseTestController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T23:24:19.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 33,
               "Title": "DatabaseTester.cs",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\DatabaseTester.cs",
               "RelativeDocumentMoniker": "abode\\Models\\DatabaseTester.cs",
               "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\Models\\DatabaseTester.cs",
               "RelativeToolTip": "abode\\Models\\DatabaseTester.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T23:18:02.662Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 39,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\appsettings.json",
               "RelativeDocumentMoniker": "abode\\appsettings.json",
@@ -163,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 36,
               "Title": "test.txt",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\test.txt",
               "RelativeDocumentMoniker": "test.txt",
@@ -175,31 +636,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 38,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\package-lock.json",
               "RelativeDocumentMoniker": "package-lock.json",
               "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\package-lock.json",
               "RelativeToolTip": "package-lock.json",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAEBVwAkAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-11T15:32:42.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 37,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\package.json",
               "RelativeDocumentMoniker": "package.json",
               "ToolTip": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\package.json",
               "RelativeToolTip": "package.json",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAEBVwAQAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-11T15:32:47.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 35,
               "Title": "tsconfig.json",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\tsconfig.json",
               "RelativeDocumentMoniker": "tsconfig.json",
@@ -211,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 41,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\artin\\OneDrive\\Desktop\\abode\\Abode\\abode\\appsettings.Development.json",
               "RelativeDocumentMoniker": "abode\\appsettings.Development.json",

@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\abode",
+    "\\abode\\ApplicationDbContext",
+    "\\abode\\Controllers",
+    "\\abode\\Migrations",
+    "\\abode\\Migrations\\Property"
   ],
-  "SelectedNode": "\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.sln",
+  "SelectedNode": "\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.sln",
   "PreviewInSolutionExplorer": false
 }
