@@ -33,6 +33,9 @@ builder.Services.AddDbContext<PropertyHousesDbContext>(options =>
        options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddDbContext<MessagingDbContext>(options =>
         options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<VacationRentalDbContext>(options =>
+    options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
 
 
 
