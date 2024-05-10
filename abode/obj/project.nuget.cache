@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "zEqGPyTBMTI2cFUUm9O6SZpSvznVFlzHQV3QAdQ7Kw4DiRXgf0AKY9yk1bseqt0HmOkP8cT8kIyKEmpkDU2usQ==",
-=======
-  "dgSpecHash": "oi2j0oMtZWEAsq5f49TVhiZ5ntIgPrm0Dl+YHILZfnCl4aOPBv2vun8bS3t2nv/rurIPnrlUqXVFwfEK0czvcQ==",
->>>>>>> 429cef539cdce5e89e0577704fb1ece127d06b79
   "success": true,
   "projectFilePath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
   "expectedPackageFiles": [
@@ -49,5 +45,12 @@
     "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
     "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

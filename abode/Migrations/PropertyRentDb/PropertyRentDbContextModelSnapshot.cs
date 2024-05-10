@@ -43,7 +43,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyRentDb
 
                     b.HasKey("RentID");
 
-                    b.ToTable("Properties");
+                    b.ToTable("Rent");
                 });
 #pragma warning restore 612, 618
         }

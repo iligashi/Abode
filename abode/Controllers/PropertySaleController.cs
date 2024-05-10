@@ -21,14 +21,14 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // GET: api/PropertySale
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PropertySale>>> GetProperties()
+        public async Task<ActionResult<IEnumerable<PropertySale>>> GetSale()
         {
             return await _context.Sale.ToListAsync();
         }
 
         // GET: api/PropertySale/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<PropertySale>> GetProperty(int id)
+        public async Task<ActionResult<PropertySale>> GetPropertySale(int id)
         {
             var propertySale = await _context.Sale.FindAsync(id);
 
@@ -42,24 +42,24 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // POST: api/PropertySale
         [HttpPost]
-        public async Task<ActionResult<PropertySale>> PostProperty(PropertySale property)
+        public async Task<ActionResult<PropertySale>> PostPropertySale(PropertySale Sale)
         {
-            _context.Sale.Add(property);
+            _context.Sale.Add(Sale);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetProperty), new { id = property.SaleID }, property);
+            return CreatedAtAction(nameof(GetPropertySale), new { id = Sale.SaleID }, Sale);
         }
 
         // PUT: api/PropertySale/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProperty(int id, PropertySale property)
+        public async Task<IActionResult> PutPropertySale(int id, PropertySale Sale)
         {
-            if (id != property.SaleID)
+            if (id != Sale.SaleID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(property).State = EntityState.Modified;
+            _context.Entry(Sale).State = EntityState.Modified;
 
             try
             {
@@ -67,7 +67,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PropertyExists(id))
+                if (!PropertySaleExists(id))
                 {
                     return NotFound();
                 }
@@ -82,21 +82,21 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // DELETE: api/PropertySale/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProperty(int id)
+        public async Task<IActionResult> DeletePropertySale(int id)
         {
-            var property = await _context.Sale.FindAsync(id);
-            if (property == null)
+            var Sale = await _context.Sale.FindAsync(id);
+            if (Sale == null)
             {
                 return NotFound();
             }
 
-            _context.Sale.Remove(property);
+            _context.Sale.Remove(Sale);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PropertyExists(int id)
+        private bool PropertySaleExists(int id)
         {
             return _context.Sale.Any(e => e.SaleID == id);
         }

@@ -12,7 +12,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertySaleDb
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Properties",
+                name: "Sale",
                 columns: table => new
                 {
                     SaleID = table.Column<int>(type: "INTEGER", nullable: false)
@@ -25,7 +25,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertySaleDb
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Properties", x => x.SaleID);
+                    table.PrimaryKey("PK_Sale", x => x.SaleID);
                 });
         }
 
@@ -33,7 +33,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertySaleDb
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Properties");
+                name: "Sale");
         }
     }
 }

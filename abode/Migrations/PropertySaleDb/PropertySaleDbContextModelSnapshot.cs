@@ -40,7 +40,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertySaleDb
 
                     b.HasKey("SaleID");
 
-                    b.ToTable("Properties");
+                    b.ToTable("Sale");
                 });
 #pragma warning restore 612, 618
         }
