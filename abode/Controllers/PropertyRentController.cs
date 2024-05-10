@@ -21,45 +21,46 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // GET: api/PropertyRent
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PropertyRent>>> GetProperties()
+        public async Task<ActionResult<IEnumerable<PropertyRent>>> GetRent()
         {
             return await _context.Rent.ToListAsync();
         }
 
         // GET: api/PropertyRent/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<PropertyRent>> GetProperty(int id)
+        public async Task<ActionResult<PropertyRent>> GetPropertyRent(int id)
         {
-            var propertyRent = await _context.Rent.FindAsync(id);
+            var PropertyRent = await _context.Rent.FindAsync(id);
 
-            if (propertyRent == null)
+            if (PropertyRent == null)
             {
                 return NotFound();
             }
 
-            return propertyRent;
+            return PropertyRent;
         }
 
         // POST: api/PropertyRent
         [HttpPost]
-        public async Task<ActionResult<PropertyRent>> PostProperty(PropertyRent property)
+        public async Task<ActionResult<PropertyRent>> PostPropertyRent(PropertyRent Rent)
         {
-            _context.Rent.Add(property);
+            _context.Rent.Add(Rent);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetProperty), new { id = property.RentID }, property);
+            return CreatedAtAction(nameof(GetPropertyRent), new { id = Rent.RentID }, Rent);
+
         }
 
         // PUT: api/PropertyRent/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutProperty(int id, PropertyRent property)
+        public async Task<IActionResult> PutPropertyRent(int id, PropertyRent Rent)
         {
-            if (id != property.RentID)
+            if (id != Rent.RentID)
             {
                 return BadRequest();
             }
 
-            _context.Entry(property).State = EntityState.Modified;
+            _context.Entry(Rent).State = EntityState.Modified;
 
             try
             {
@@ -67,7 +68,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PropertyExists(id))
+                if (!PropertyRentExists(id))
                 {
                     return NotFound();
                 }
@@ -82,21 +83,21 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // DELETE: api/PropertyRent/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProperty(int id)
+        public async Task<IActionResult> DeletePropertyRent(int id)
         {
-            var property = await _context.Rent.FindAsync(id);
-            if (property == null)
+            var Rent = await _context.Rent.FindAsync(id);
+            if (Rent == null)
             {
                 return NotFound();
             }
 
-            _context.Rent.Remove(property);
+            _context.Rent.Remove(Rent);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
-        private bool PropertyExists(int id)
+        private bool PropertyRentExists(int id)
         {
             return _context.Rent.Any(e => e.RentID == id);
         }
