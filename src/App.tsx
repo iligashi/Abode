@@ -16,20 +16,8 @@ const App: React.FC = () => {
 				<Route path="contactus" element={<ContactUs />} />
 				<Route path='signup' element={<SignUp />} />	
 				{/* <Route path='contact' element={<ContactForm/>}/> */}
-  <Route
-    path="profile"
-    element={<ProfileView 
-      name="Ilaz" 
-      surname="Gashi" 
-      email="ili@gmail.com" 
-      bio="Admin of the abode" 
-      phoneNumber="+1234567890" 
-      profileImageUrl={require('./Images/ili.jpg')} 
-      status="Active" 
-    />} 
-  />
-</Routes>
-
+   <Route path="profile" element={<ProfileView/>} />
+    </Routes>
 		</BrowserRouter>
 	);
 

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 using YourNamespace.ApplicationDbContext;
@@ -11,6 +12,15 @@ var configuration = builder.Configuration;
 builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
+
+// ---------------------------------------------------------
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAnyOrigin",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
 
 builder.Services.AddDbContext<UserDbContext>(options =>
        options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
@@ -57,10 +67,11 @@ if(app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Add CORS middleware to the pipeline
+app.UseCors("AllowAnyOrigin");
+
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
