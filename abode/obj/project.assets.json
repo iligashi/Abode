@@ -1755,26 +1755,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\": {}
+    "/Users/lrb/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+      "projectUniqueName": "/Users/lrb/Desktop/Abode/Abode/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
       "projectName": "WorkingwithSQLLiteinAsp.NETCoreWebAPI",
-      "projectPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
-      "packagesPath": "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\",
-      "outputPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\obj\\",
+      "projectPath": "/Users/lrb/Desktop/Abode/Abode/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+      "packagesPath": "/Users/lrb/.nuget/packages/",
+      "outputPath": "/Users/lrb/Desktop/Abode/Abode/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC-SYSTEMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/lrb/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1787,11 +1785,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1842,24 +1835,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.18, 7.0.18]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1868,16 +1843,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
