@@ -10,25 +10,25 @@ using WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models;
 [Route("api/[controller]")]
 public class UsersRegistrationController : ControllerBase
 {
-    private readonly UserDbContext _context;
+    private readonly UserRegistrationDbContext _context;
 
-    public UsersRegistrationController(UserDbContext context)
+    public UsersRegistrationController(UserRegistrationDbContext context)
     {
         _context = context;
     }
 
     // GET: api/Users
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+    public async Task<ActionResult<IEnumerable<UserRegistration>>> GetUserRegistration()
     {
-        return await _context.Users.ToListAsync();
+        return await _context.UserRegistration.ToListAsync();
     }
 
     // GET: api/Users/5
     [HttpGet("{id}")]
-    public async Task<ActionResult<User>> GetUser(int id)
+    public async Task<ActionResult<UserRegistration>> GetUserRegistration(int id)
     {
-        var user = await _context.Users.FindAsync(id);
+        var user = await _context.UserRegistration.FindAsync(id);
 
         if (user == null)
         {
@@ -40,19 +40,19 @@ public class UsersRegistrationController : ControllerBase
 
     // POST: api/Users
     [HttpPost]
-    public async Task<ActionResult<User>> PostUser(User user)
+    public async Task<ActionResult<UserRegistration>> PostUser(UserRegistration user)
     {
-        _context.Users.Add(user);
+        _context.UserRegistration.Add(user);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetUser), new { id = user.UserID }, user);
+        return CreatedAtAction(nameof(GetUserRegistration), new { id = user.UserRegistrationId }, user);
     }
 
     // PUT: api/Users/5
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutUser(int id, User user)
+    public async Task<IActionResult> PutUser(int id, UserRegistration user)
     {
-        if (id != user.UserID)
+        if (id != user.UserRegistrationId)
         {
             return BadRequest();
         }
@@ -80,15 +80,15 @@ public class UsersRegistrationController : ControllerBase
 
     // DELETE: api/Users/5
     [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteUser(int id)
+    public async Task<IActionResult> DeleteUserRegistration(int id)
     {
-        var user = await _context.Users.FindAsync(id);
+        var user = await _context.UserRegistration.FindAsync(id);
         if (user == null)
         {
             return NotFound();
         }
 
-        _context.Users.Remove(user);
+        _context.UserRegistration.Remove(user);
         await _context.SaveChangesAsync();
 
         return NoContent();
@@ -96,6 +96,6 @@ public class UsersRegistrationController : ControllerBase
 
     private bool UserExists(int id)
     {
-        return _context.Users.Any(e => e.UserID == id);
+        return _context.UserRegistration.Any(e => e.UserRegistrationId == id);
     }
 }
