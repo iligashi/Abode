@@ -50,6 +50,8 @@ const Header = (props: Props) => {
               <li><a href="/home" className="nav-link px-2 link-body-emphasis"> Home</a></li>
               <li><a href="/contactus" className="nav-link px-2 link-body-emphasis">Contact Us</a></li>
               <li><a href="/profile" className="nav-link px-2 link-body-emphasis">Profile</a></li>
+              <li><a href="/Dashboard/xtreme-html/ltr/index.html" className="nav-link px-2 link-body-emphasis">Dashboard</a></li>
+
             </ul>
             </div>
            
