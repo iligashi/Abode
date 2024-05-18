@@ -4,7 +4,6 @@ import LoginView from './views/LoginView';
 import ContactUs from './views/ContactUs';
 import ProfileView from './views/ProfileView';
 import SignUp from './views/SignUp';
-// import ContactForm from './views/contactform/contact';
 
 
 const App: React.FC = () => {

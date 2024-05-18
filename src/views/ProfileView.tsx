@@ -1,3 +1,144 @@
+import React, { useState, useEffect } from 'react';
+import './css/ProfileView.css';
+import Header from './Header';
+
+const ProfileView = () => {
+  const [userId, setUserId] = useState('');
+  const [userData, setUserData] = useState({
+    username: '',
+    password: '',
+    name: '',
+    surname: '',
+    email: '',
+    bio: '',
+    phoneNumber: '',
+    profileImageUrl: '',
+    status: ''
+  });
+  const [isEditing, setIsEditing] = useState(false);
+
+  const fetchUserData = async () => {
+    try {
+      const response = await fetch(`https://localhost:7083/api/Users/${userId}`);
+      const userData = await response.json();
+      setUserData(userData);
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    }
+  };
+
+  useEffect(() => {
+    if (userId !== '') {
+      fetchUserData();
+    }
+  }, [userId]);
+
+  const handleUserIdChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setUserId(event.target.value);
+  };
+
+  const handleInputChange = (key: string, value: string) => {
+    setUserData({ ...userData, [key]: value });
+  };
+
+  const handleSubmit = async () => {
+    try {
+      const response = await fetch(`https://localhost:7083/api/Users/${userId}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(userData)
+      });
+      if (response.ok) {
+        console.log('User data updated successfully');
+        setIsEditing(false);
+      } else {
+        console.error('Failed to update user data');
+      }
+    } catch (error) {
+      console.error('Error updating user data:', error);
+    }
+  };
+
+  const handleEditProfile = () => {
+    setIsEditing(true);
+  };
+
+  return (
+    <div className="container">
+      <Header />
+      <div className="row justify-content-center">
+        <div className="col-md-8">
+          <div className="card">
+            <div className="card-body">
+              <div className="profile-header text-center">
+                <div style={{ width: '100%' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+                    <div style={{ display: 'block' }}>
+                      <img src={userData.profileImageUrl} className="profile-picture" alt="Profile" />
+                      <div className="profile-title">
+                        <h2>{userData.name} {userData.surname}</h2>
+                      </div>
+                    </div>
+                    <div style={{ alignSelf: 'start' }}>
+                      {!isEditing && (
+                        <button className="btn btn-primary mt-2" onClick={handleEditProfile}>Change Profile</button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="profile-body">
+                <div className="profile-info">
+                  <div className="profile-item">
+                    <label htmlFor="userId">User ID:</label>
+                    <input type="text" id="userId" value={userId} onChange={handleUserIdChange} />
+                  </div>
+                  <div className="profile-item">
+                    <strong>Username:</strong> {isEditing ? <input type="text" value={userData.username} onChange={(e) => handleInputChange('username', e.target.value)} /> : userData.username}
+                  </div>
+                  <div className="profile-item">
+                    <strong>Password:</strong> {isEditing ? <input type="password" value={userData.password} onChange={(e) => handleInputChange('password', e.target.value)} /> : '*'.repeat(userData.password.length)}
+                  </div>
+                  <div className="profile-item">
+                    <strong>Name:</strong> {isEditing ? <input type="text" value={userData.name} onChange={(e) => handleInputChange('name', e.target.value)} /> : userData.name}
+                  </div>
+                  <div className="profile-item">
+                    <strong>Surname:</strong> {isEditing ? <input type="text" value={userData.surname} onChange={(e) => handleInputChange('surname', e.target.value)} /> : userData.surname}
+                  </div>
+                  <div className="profile-item">
+                    <strong>Email:</strong> {isEditing ? <input type="text" value={userData.email} onChange={(e) => handleInputChange('email', e.target.value)} /> : userData.email}
+                  </div>
+                  <div className="profile-item">
+                    <strong>Phone Number:</strong> {isEditing ? <input type="text" value={userData.phoneNumber} onChange={(e) => handleInputChange('phoneNumber', e.target.value)} /> : userData.phoneNumber}
+                  </div>
+                  <div className="profile-item">
+                    <strong>Status:</strong> {isEditing ? <input type="text" value={userData.status} onChange={(e) => handleInputChange('status', e.target.value)} /> : userData.status}
+                  </div>
+                  <div className="profile-item">
+                    <strong>Bio:</strong> {isEditing ? <textarea value={userData.bio} onChange={(e) => handleInputChange('bio', e.target.value)} /> : userData.bio}
+                  </div>
+                </div>
+                {isEditing && (
+                  <div className="profile-actions">
+                    <button className="btn btn-primary" onClick={handleSubmit}>Save Changes</button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ProfileView;
+
+
+
+
 // import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 // import './css/ProfileView.css';
@@ -165,140 +306,3 @@
 // };
 
 // export default ProfileView;
-import React, { useState, useEffect } from 'react';
-import './css/ProfileView.css';
-import Header from './Header';
-
-const ProfileView = () => {
-  const [userId, setUserId] = useState('');
-  const [userData, setUserData] = useState({
-    username: '',
-    password: '',
-    name: '',
-    surname: '',
-    email: '',
-    bio: '',
-    phoneNumber: '',
-    profileImageUrl: '',
-    status: ''
-  });
-  const [isEditing, setIsEditing] = useState(false);
-
-  const fetchUserData = async () => {
-    try {
-      const response = await fetch(`https://localhost:7083/api/Users/${userId}`);
-      const userData = await response.json();
-      setUserData(userData);
-    } catch (error) {
-      console.error('Error fetching user data:', error);
-    }
-  };
-
-  useEffect(() => {
-    if (userId !== '') {
-      fetchUserData();
-    }
-  }, [userId]);
-
-  const handleUserIdChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setUserId(event.target.value);
-  };
-
-  const handleInputChange = (key: string, value: string) => {
-    setUserData({ ...userData, [key]: value });
-  };
-
-  const handleSubmit = async () => {
-    try {
-      const response = await fetch(`https://localhost:7083/api/Users/${userId}`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(userData)
-      });
-      if (response.ok) {
-        console.log('User data updated successfully');
-        setIsEditing(false);
-      } else {
-        console.error('Failed to update user data');
-      }
-    } catch (error) {
-      console.error('Error updating user data:', error);
-    }
-  };
-
-  const handleEditProfile = () => {
-    setIsEditing(true);
-  };
-
-  return (
-    <div className="container">
-      <Header />
-      <div className="row justify-content-center">
-        <div className="col-md-8">
-          <div className="card">
-            <div className="card-body">
-              <div className="profile-header text-center">
-                <div style={{ width: '100%' }}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-                    <div style={{ display: 'block' }}>
-                      <img src={userData.profileImageUrl} className="profile-picture" alt="Profile" />
-                      <div className="profile-title">
-                        <h2>{userData.name} {userData.surname}</h2>
-                      </div>
-                    </div>
-                    <div style={{ alignSelf: 'start' }}>
-                      {!isEditing && (
-                        <button className="btn btn-primary mt-2" onClick={handleEditProfile}>Change Profile</button>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="profile-body">
-                <div className="profile-info">
-                  <div className="profile-item">
-                    <label htmlFor="userId">User ID:</label>
-                    <input type="text" id="userId" value={userId} onChange={handleUserIdChange} />
-                  </div>
-                  <div className="profile-item">
-                    <strong>Username:</strong> {isEditing ? <input type="text" value={userData.username} onChange={(e) => handleInputChange('username', e.target.value)} /> : userData.username}
-                  </div>
-                  <div className="profile-item">
-                    <strong>Password:</strong> {isEditing ? <input type="password" value={userData.password} onChange={(e) => handleInputChange('password', e.target.value)} /> : '*'.repeat(userData.password.length)}
-                  </div>
-                  <div className="profile-item">
-                    <strong>Name:</strong> {isEditing ? <input type="text" value={userData.name} onChange={(e) => handleInputChange('name', e.target.value)} /> : userData.name}
-                  </div>
-                  <div className="profile-item">
-                    <strong>Surname:</strong> {isEditing ? <input type="text" value={userData.surname} onChange={(e) => handleInputChange('surname', e.target.value)} /> : userData.surname}
-                  </div>
-                  <div className="profile-item">
-                    <strong>Email:</strong> {isEditing ? <input type="text" value={userData.email} onChange={(e) => handleInputChange('email', e.target.value)} /> : userData.email}
-                  </div>
-                  <div className="profile-item">
-                    <strong>Phone Number:</strong> {isEditing ? <input type="text" value={userData.phoneNumber} onChange={(e) => handleInputChange('phoneNumber', e.target.value)} /> : userData.phoneNumber}
-                  </div>
-                  <div className="profile-item">
-                    <strong>Status:</strong> {isEditing ? <input type="text" value={userData.status} onChange={(e) => handleInputChange('status', e.target.value)} /> : userData.status}
-                  </div>
-                  <div className="profile-item">
-                    <strong>Bio:</strong> {isEditing ? <textarea value={userData.bio} onChange={(e) => handleInputChange('bio', e.target.value)} /> : userData.bio}
-                  </div>
-                </div>
-                {isEditing && (
-                  <div className="profile-actions">
-                    <button className="btn btn-primary" onClick={handleSubmit}>Save Changes</button>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default ProfileView;
