@@ -56,6 +56,9 @@ builder.Services.AddDbContext<UserAccountDbContext>(options =>
 builder.Services.AddDbContext<UserAccountDbContext>(options =>
     options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddDbContext<UserAccountDbContext>(options =>
+    options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
 
 
 

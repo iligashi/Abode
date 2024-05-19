@@ -1,5 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
+=======
+﻿
+namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
+>>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
 =======
 ﻿
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
@@ -13,7 +18,12 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
         public string Password { get; set; }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
 =======
 }
 

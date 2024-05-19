@@ -22,7 +22,11 @@ public class UserAccontController : ControllerBase
     public async Task<ActionResult<IEnumerable<UserAccontController>>> GetUserAccount()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return await _context.UserRegistration.ToListAsync();
+=======
+        return await _context.UserAccount.ToListAsync();
+>>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
 =======
         return await _context.UserAccount.ToListAsync();
 >>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
@@ -103,7 +107,11 @@ public class UserAccontController : ControllerBase
         return _context.UserAccount.Any(e => e.UserAccountId == id);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
 =======
 }
 >>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
