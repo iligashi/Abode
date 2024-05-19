@@ -21,7 +21,11 @@ public class UserAccontController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<UserAccontController>>> GetUserAccount()
     {
+<<<<<<< HEAD
         return await _context.UserRegistration.ToListAsync();
+=======
+        return await _context.UserAccount.ToListAsync();
+>>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
     }
 
     // GET: api/Users/5
@@ -98,4 +102,8 @@ public class UserAccontController : ControllerBase
     {
         return _context.UserAccount.Any(e => e.UserAccountId == id);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")

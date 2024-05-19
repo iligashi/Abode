@@ -10,4 +10,8 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext
         public DbSet<UserAccount> UserAccount { get; set; }
         //public DbSet<Contact> Contacts { get; set; } // Add DbSet for Contacts
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
