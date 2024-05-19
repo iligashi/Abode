@@ -47,6 +47,8 @@ builder.Services.AddDbContext<VacationRentalDbContext>(options =>
     options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddDbContext<UserRegistrationDbContext>(options =>
     options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<UserAccountDbContext>(options =>
+    options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 
 
 
