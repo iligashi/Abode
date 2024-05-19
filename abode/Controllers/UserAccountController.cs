@@ -8,64 +8,56 @@ using WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models;
 
 [ApiController]
 [Route("api/[controller]")]
-public class UserAccontController : ControllerBase
+public class UserAccountController : ControllerBase
 {
     private readonly UserAccountDbContext _context;
 
-    public UserAccontController(UserAccountDbContext context)
+    public UserAccountController(UserAccountDbContext context)
     {
         _context = context;
     }
 
-    // GET: api/Users
+    // GET: api/UserAccount
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<UserAccontController>>> GetUserAccount()
+    public async Task<ActionResult<IEnumerable<UserAccount>>> GetUserAccounts()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return await _context.UserRegistration.ToListAsync();
-=======
         return await _context.UserAccount.ToListAsync();
->>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
-=======
-        return await _context.UserAccount.ToListAsync();
->>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
     }
 
-    // GET: api/Users/5
+    // GET: api/UserAccount/5
     [HttpGet("{id}")]
     public async Task<ActionResult<UserAccount>> GetUserAccount(int id)
     {
-        var UserAccount = await _context.UserAccount.FindAsync(id);
+        var userAccount = await _context.UserAccount.FindAsync(id);
 
-        if (UserAccount == null)
+        if (userAccount == null)
         {
             return NotFound();
         }
 
-        return UserAccount;
+        return userAccount;
     }
 
-    // POST: api/Users
+    // POST: api/UserAccount
     [HttpPost]
-    public async Task<ActionResult<UserAccount>> PostUserRegistration(UserAccount UserAccount)
+    public async Task<ActionResult<UserAccount>> PostUserAccount(UserAccount userAccount)
     {
-        _context.UserAccount.Add(UserAccount);
+        _context.UserAccount.Add(userAccount);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetUserAccount), new { id = UserAccount.UserAccountId }, UserAccount);
+        return CreatedAtAction(nameof(GetUserAccount), new { id = userAccount.UserAccountId }, userAccount);
     }
 
-    // PUT: api/Users/5
+    // PUT: api/UserAccount/5
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutUserAccount(int id, UserAccount UserAccount)
+    public async Task<IActionResult> PutUserAccount(int id, UserAccount userAccount)
     {
-        if (id != UserAccount.UserAccountId)
+        if (id != userAccount.UserAccountId)
         {
             return BadRequest();
         }
 
-        _context.Entry(UserAccount).State = EntityState.Modified;
+        _context.Entry(userAccount).State = EntityState.Modified;
 
         try
         {
@@ -86,17 +78,17 @@ public class UserAccontController : ControllerBase
         return NoContent();
     }
 
-    // DELETE: api/Users/5
+    // DELETE: api/UserAccount/5
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteUserAccount(int id)
     {
-        var UserAccount = await _context.UserAccount.FindAsync(id);
-        if (UserAccount == null)
+        var userAccount = await _context.UserAccount.FindAsync(id);
+        if (userAccount == null)
         {
             return NotFound();
         }
 
-        _context.UserAccount.Remove(UserAccount);
+        _context.UserAccount.Remove(userAccount);
         await _context.SaveChangesAsync();
 
         return NoContent();
@@ -106,12 +98,4 @@ public class UserAccontController : ControllerBase
     {
         return _context.UserAccount.Any(e => e.UserAccountId == id);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
-=======
-}
->>>>>>> parent of 615726b (Revert "Merge branch 'main' of https://github.com/iligashi/Abode")
