@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-// import {v4 as uuidv4} from 'uuid';
-
 import Houses from "../Images/houses.jpeg";
 
 interface Props {}
@@ -30,7 +28,7 @@ const SignUp = (props: Props) => {
           [name]: value
         });
       };
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         let newErrors = {
             Name: '',
@@ -73,26 +71,6 @@ const SignUp = (props: Props) => {
         // Submit the form
         console.log('Form submitted successfully:', formData);
       }
-
-      const payload = {
-        "firstName": formData.Name,
-        "lastName": formData.Surname,
-        "email": formData.email,
-        "password": formData.Password
-      }
-
-      const apidata = await fetch("https://localhost:7083/api/UsersRegistration", 
-       {
-        method: 'POST',
-        headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: JSON.stringify(payload)
-       }
-      )
-      const registered = await apidata.json();
-      console.log({apidata}, {registered});
     };
    
 
