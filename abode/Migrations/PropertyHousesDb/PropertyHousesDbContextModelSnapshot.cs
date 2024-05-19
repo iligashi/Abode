@@ -34,6 +34,10 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyHousesDb
                     b.Property<int>("GarageSpaces")
                         .HasColumnType("INTEGER");
 
+                    b.Property<byte[]>("Photos")
+                        .IsRequired()
+                        .HasColumnType("BLOB");
+
                     b.Property<int>("PropertyID")
                         .HasColumnType("INTEGER");
 

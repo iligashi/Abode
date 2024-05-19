@@ -10,8 +10,8 @@ using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyHousesDb
 {
     [DbContext(typeof(PropertyHousesDbContext))]
-    [Migration("20240509003903_PropertyHouses")]
-    partial class PropertyHouses
+    [Migration("20240518222003_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,10 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyHousesDb
 
                     b.Property<int>("GarageSpaces")
                         .HasColumnType("INTEGER");
+
+                    b.Property<byte[]>("Photos")
+                        .IsRequired()
+                        .HasColumnType("BLOB");
 
                     b.Property<int>("PropertyID")
                         .HasColumnType("INTEGER");

@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
@@ -19,7 +21,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
             _context = context;
         }
 
-        // GET: api/Property\Houses
+        // GET: api/PropertyHouses
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PropertyHouses>>> GetProperties()
         {
@@ -94,6 +96,41 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        // POST: api/PropertyHouses/5/upload-photo
+        [HttpPost("{id}/upload-photo")]
+        public async Task<IActionResult> UploadPhoto(int id, IFormFile photo)
+        {
+            var propertyHouses = await _context.Houses.FindAsync(id);
+            if (propertyHouses == null)
+            {
+                return NotFound();
+            }
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await photo.CopyToAsync(memoryStream);
+                propertyHouses.Photos = memoryStream.ToArray();
+            }
+
+            _context.Houses.Update(propertyHouses);
+            await _context.SaveChangesAsync();
+
+            return Ok(propertyHouses);
+        }
+
+        // GET: api/PropertyHouses/5/photo
+        [HttpGet("{id}/photo")]
+        public async Task<IActionResult> GetPhoto(int id)
+        {
+            var propertyHouses = await _context.Houses.FindAsync(id);
+            if (propertyHouses == null || propertyHouses.Photos == null)
+            {
+                return NotFound();
+            }
+
+            return File(propertyHouses.Photos, "image/jpeg");
         }
 
         private bool PropertyExists(int id)
