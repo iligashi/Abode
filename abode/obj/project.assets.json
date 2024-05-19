@@ -1766,6 +1766,9 @@
       "packagesPath": "/Users/lrb/.nuget/packages/",
       "outputPath": "/Users/lrb/Desktop/Abode/Abode/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "/Users/lrb/.nuget/NuGet/NuGet.Config"
       ],
