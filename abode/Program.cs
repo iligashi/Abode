@@ -32,6 +32,9 @@ builder.Services.AddDbContext<PropertySaleDbContext>(options =>
 builder.Services.AddDbContext<PropertyHousesDbContext>(options =>
        options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddDbContext<ContactDbContext>(options =>
+       options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
 
 
 

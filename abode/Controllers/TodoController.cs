@@ -50,7 +50,7 @@ public class TodoController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
     {
-        if(id != todoItem.Id)
+        if (id != todoItem.Id)
         {
             return BadRequest();
         }

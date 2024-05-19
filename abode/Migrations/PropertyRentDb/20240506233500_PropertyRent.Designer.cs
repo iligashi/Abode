@@ -11,7 +11,7 @@ using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyRentDb
 {
     [DbContext(typeof(PropertyRentDbContext))]
-    [Migration("20240510220917_PropertyRent")]
+    [Migration("20240506233500_PropertyRent")]
     partial class PropertyRent
     {
         /// <inheritdoc />
@@ -46,7 +46,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyRentDb
 
                     b.HasKey("RentID");
 
-                    b.ToTable("Rent");
+                    b.ToTable("Properties");
                 });
 #pragma warning restore 612, 618
         }

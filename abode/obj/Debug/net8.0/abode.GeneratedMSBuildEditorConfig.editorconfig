@@ -9,19 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = abode
 build_property.RootNamespace = abode
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\artin\OneDrive\Desktop\abode\Abode\abode\
-=======
-build_property.ProjectDir = /Users/lrb/Desktop/Abode/abode/
->>>>>>> 30bdc757e00abe51dcd3978f0a700017d5b1f2d4
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\artin\OneDrive\Desktop\abode\Abode\abode
-=======
-build_property.MSBuildProjectDirectory = /Users/lrb/Desktop/Abode/abode
->>>>>>> 30bdc757e00abe51dcd3978f0a700017d5b1f2d4
 build_property._RazorSourceGeneratorDebug = 

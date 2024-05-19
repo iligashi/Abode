@@ -5,8 +5,9 @@
     "\\abode\\ApplicationDbContext",
     "\\abode\\Controllers",
     "\\abode\\Migrations",
-    "\\abode\\Migrations\\Property"
+    "\\abode\\Migrations\\PropertyRentDb",
+    "\\abode\\Models"
   ],
-  "SelectedNode": "\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.sln",
+  "SelectedNode": "\\abode\\Migrations\\PropertyRentDb\\20240506233500_PropertyRent.Designer.cs",
   "PreviewInSolutionExplorer": false
 }

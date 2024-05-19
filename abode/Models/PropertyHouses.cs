@@ -24,7 +24,5 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
         public int Floors { get; set; }
 
 
-        //public virtual ICollection<PropertyRent> PropertyRents { get; set; }
-        //public virtual ICollection<PropertySale> PropertySales { get; set; }
     }
 }
