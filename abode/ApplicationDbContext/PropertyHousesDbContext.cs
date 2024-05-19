@@ -9,11 +9,6 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext
 
         public DbSet<PropertyHouses> Houses { get; set; }
 
-        // DbSet properties for any related entities (PropertyRent, PropertySale, etc.) if applicable
-
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    // Configure entity relationships and other model configurations if needed
-        //}
+        // Configure entity relationships and other model configurations if needed
     }
 }

@@ -5,7 +5,7 @@
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyHousesDb
 {
     /// <inheritdoc />
-    public partial class PropertyHouses : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -22,7 +22,8 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyHousesDb
                     Size = table.Column<decimal>(type: "TEXT", nullable: false),
                     YearBuilt = table.Column<int>(type: "INTEGER", nullable: false),
                     GarageSpaces = table.Column<int>(type: "INTEGER", nullable: false),
-                    Floors = table.Column<int>(type: "INTEGER", nullable: false)
+                    Floors = table.Column<int>(type: "INTEGER", nullable: false),
+                    Photos = table.Column<byte[]>(type: "BLOB", nullable: false)
                 },
                 constraints: table =>
                 {
