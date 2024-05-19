@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 
@@ -10,38 +11,40 @@ using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertySaleDb
 {
     [DbContext(typeof(PropertySaleDbContext))]
-    partial class PropertySaleDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240510221414_PropertySale")]
+    partial class PropertySale
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.15");
 
             modelBuilder.Entity("WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models.PropertySale", b =>
-                {
-                    b.Property<int>("SaleID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+            {
+                b.Property<int>("SaleID")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("INTEGER");
 
-                    b.Property<int>("BuyerID")
-                        .HasColumnType("INTEGER");
+                b.Property<int>("BuyerID")
+                    .HasColumnType("INTEGER");
 
-                    b.Property<int>("PropertyID")
-                        .HasColumnType("INTEGER");
+                b.Property<int>("PropertyID")
+                    .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("SalePrice")
-                        .HasColumnType("TEXT");
+                b.Property<decimal>("SalePrice")
+                    .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("SaletDate")
-                        .HasColumnType("TEXT");
+                b.Property<DateTime>("SaletDate")
+                    .HasColumnType("TEXT");
 
-                    b.Property<int>("SellerID")
-                        .HasColumnType("INTEGER");
+                b.Property<int>("SellerID")
+                    .HasColumnType("INTEGER");
 
-                    b.HasKey("SaleID");
+                b.HasKey("SaleID");
 
-                    b.ToTable("Sale");
-                });
+                b.ToTable("Sale");
+            });
 #pragma warning restore 612, 618
         }
     }
