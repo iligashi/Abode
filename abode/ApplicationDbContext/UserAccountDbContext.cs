@@ -10,6 +10,6 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext
         {
         }
 
-        public DbSet<UserAccount> UserAccounts { get; set; }
+        public DbSet<UserAccounts> UserAccounts { get; set; }
     }
 }

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 // import {v4 as uuidv4} from 'uuid';
 
 import Houses from "../Images/houses.jpeg";
+import { useNavigate } from "react-router-dom";
 
 interface Props {}
 
@@ -23,6 +24,7 @@ const SignUp = (props: Props) => {
    
     
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+    const navigate = useNavigate();
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         setFormData({
@@ -87,12 +89,17 @@ const SignUp = (props: Props) => {
         headers: {
           "Content-Type": "application/json",
           // 'Content-Type': 'application/x-www-form-urlencoded',
+          
         },
+        
         body: JSON.stringify(payload)
+        
        }
+
       )
       const registered = await apidata.json();
       console.log({apidata}, {registered});
+      navigate("/home");
     };
    
 

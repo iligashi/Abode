@@ -21,14 +21,14 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // GET: api/UserAccount
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserAccount>>> GetUserAccounts()
+        public async Task<ActionResult<IEnumerable<UserAccounts>>> GetUserAccounts()
         {
             return await _context.UserAccounts.ToListAsync();
         }
 
         // GET: api/UserAccount/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserAccount>> GetUserAccount(long id)
+        public async Task<ActionResult<UserAccounts>> GetUserAccount(long id)
         {
             var userAccount = await _context.UserAccounts.FindAsync(id);
 
@@ -42,7 +42,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // POST: api/UserAccount
         [HttpPost]
-        public async Task<ActionResult<UserAccount>> PostUserAccount(UserAccount userAccount)
+        public async Task<ActionResult<UserAccounts>> PostUserAccount(UserAccounts userAccount)
         {
             _context.UserAccounts.Add(userAccount);
             await _context.SaveChangesAsync();
@@ -52,7 +52,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // PUT: api/UserAccount/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUserAccount(long id, UserAccount userAccount)
+        public async Task<IActionResult> PutUserAccount(long id, UserAccounts userAccount)
         {
             if (id != userAccount.Id)
             {

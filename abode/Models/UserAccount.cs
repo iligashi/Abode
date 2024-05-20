@@ -2,7 +2,7 @@
 
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
 {
-    public class UserAccount
+    public class UserAccounts
 
     {
         [Key]

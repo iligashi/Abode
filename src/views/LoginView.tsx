@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Houses from "../Images/houses.jpeg";
 import { useNavigate } from "react-router-dom";
 
-
 interface Props {}
 
 const LoginView = (props: Props) => {
@@ -26,7 +25,29 @@ const LoginView = (props: Props) => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("https://localhost:7083/api/UserAccount", {
+      const checkResponse = await fetch(`https://localhost:7083/api/UsersRegistration`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (!checkResponse.ok) {
+        const errorData = await checkResponse.json();
+        setError(errorData.message || "An error occurred");
+        return;
+      }
+
+      const users = await checkResponse.json();
+
+      const userExists = users.some((user: { email: string }) => user.email === email);
+
+      if (!userExists) {
+        setError("User does not exist");
+        return;
+      }
+
+      const loginResponse = await fetch("https://localhost:7083/api/UserAccount/PostUserAccount", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -34,19 +55,16 @@ const LoginView = (props: Props) => {
         body: JSON.stringify({ email, password }),
       });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        setError(errorData.message || "An error occurred");
+      if (!loginResponse.ok) {
+        const errorData = await loginResponse.json();
+        setError(errorData.message || "An error occurred during login");
         return;
       }
 
-      const data = await response.json();
-      if (data.userExists) {
-        console.log("Login successful");
-        navigate("/home");
-      } else {
-        setError("User does not exist");
-      }
+      const loginData = await loginResponse.json();
+      console.log('Login successful:', loginData);
+
+      navigate("/home");
     } catch (error) {
       setError("An error occurred while logging in");
       console.error("Login error:", error);
