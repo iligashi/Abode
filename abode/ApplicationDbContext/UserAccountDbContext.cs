@@ -5,12 +5,11 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext
 {
     public class UserAccountDbContext : DbContext
     {
-        public UserAccountDbContext(DbContextOptions<UserAccountDbContext> options) : base(options) { }
+        public UserAccountDbContext(DbContextOptions<UserAccountDbContext> options)
+            : base(options)
+        {
+        }
 
-        public DbSet<UserAccount> UserAccount { get; set; }
-        //public DbSet<Contact> Contacts { get; set; } // Add DbSet for Contacts
+        public DbSet<UserAccount> UserAccounts { get; set; }
     }
-
 }
-
-

@@ -1,14 +1,14 @@
+﻿using System.ComponentModel.DataAnnotations;
 
-﻿namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
-
+namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models
 {
     public class UserAccount
-    {
 
-        public int UserAccountId { get; set; }
-        public string Email { get; set; }
+    {
+        [Key]
+
+        public long Id { get; set; }
         public string Password { get; set; }
+        public string Email { get; set; }
     }
 }
-
-
