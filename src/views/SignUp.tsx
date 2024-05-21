@@ -22,7 +22,7 @@ const SignUp = (props: Props) => {
       });
     
    
-    
+      const [error, setError] = useState<string>("");
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
     const navigate = useNavigate();
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -42,10 +42,12 @@ const SignUp = (props: Props) => {
 
     }
    
-
+    
+   
     if (formData.Name.trim() === '') {
-        newErrors.Name = 'please fill out this field.';
+      newErrors.Name = 'please fill out this field.';
       }
+      
     if (formData.Password.trim() === '') {
         newErrors.Password = 'please fill out this field.';
       }
@@ -54,7 +56,10 @@ const SignUp = (props: Props) => {
         newErrors.Surname = 'please fill out this field.';
       }
       
-
+    else {
+            setError('');
+            navigate("/home");
+          }
      
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!formData.email.trim() ) {
@@ -63,6 +68,10 @@ const SignUp = (props: Props) => {
       
       else if (!emailRegex.test(formData.email))  {
         newErrors.email = 'email is not available';
+      }
+      else {
+        setError('');
+        navigate("/home");
       }
     
       setErrors(newErrors);
@@ -99,7 +108,7 @@ const SignUp = (props: Props) => {
       )
       const registered = await apidata.json();
       console.log({apidata}, {registered});
-      navigate("/home");
+      
     };
    
 
