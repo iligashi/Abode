@@ -46,6 +46,13 @@ const LoginView = (props: Props) => {
         setError("User does not exist");
         return;
       }
+      if (!email || !password) {
+      setError('Username and Password cannot be empty');
+    }
+    else {
+      setError('');
+      navigate("/home");
+    }
 
       const loginResponse = await fetch("https://localhost:7083/api/UserAccount/PostUserAccount", {
         method: "POST",
@@ -64,12 +71,13 @@ const LoginView = (props: Props) => {
       const loginData = await loginResponse.json();
       console.log('Login successful:', loginData);
 
-      navigate("/home");
+      // navigate("/home");
     } catch (error) {
       setError("An error occurred while logging in");
       console.error("Login error:", error);
     }
   };
+  
 
   const divStyle: React.CSSProperties = {
     display: "block",
