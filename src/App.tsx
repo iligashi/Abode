@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route  , Navigate} from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+
 import Homepage from "./views/Homepage";
 import LoginView from "./views/LoginView";
 import ContactUs from "./views/ContactUs";
@@ -15,6 +17,8 @@ const App: React.FC = () => {
         <Route path="signup" element={<SignUp />} />
         {/* <Route path='contact' element={<ContactForm/>}/> */}
         <Route path="profile" element={<ProfileView />} />
+        <Route path="*" element={<Navigate to="/login" />} />
+
       </Routes>
     </BrowserRouter>
   );
