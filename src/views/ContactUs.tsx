@@ -1,18 +1,54 @@
-import React from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/contact.css'
+import './css/contact.css';
 import Header from "./Header";
+import axios from 'axios';
+import emailjs from 'emailjs-com';
 
+const ContactUs: React.FC = () => {
+  const [formData, setFormData] = useState({
+    fname: '',
+    lname: '',
+    email: '',
+    subject: ''
+  });
 
-function App() {
-  
- 
- 
-    return (
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    try {
+      await axios.post('https://localhost:7083/api/Contacts', formData);
+      console.log('Data sent to API successfully.');
+    } catch (error) {
+      console.error('Error sending data to API:', error);
+    }
+
+    try {
+      const emailResponse = await emailjs.send(
+        'service_h3ral8d', 
+        'template_0dzx88f', 
+        {
+          fname: formData.fname,
+          lname: formData.lname,
+          email: formData.email,
+          subject: formData.subject,
+        },
+        'XjDQ16Moq4IOUH77j' 
+      );
+      console.log('Email sent successfully:', emailResponse.status, emailResponse.text);
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  };
+
+  return (
     <div>
-       <Header/>
-  
-
+      <Header />
       <div className="contact py-5">
         <div className="container">
           <h1 className="text-center mb-4">Contact</h1>
@@ -36,50 +72,79 @@ function App() {
                 </div>
               </div>
             </div>
-           <div className="con-info bg-light p-4">
-                <h3>PAYMENT INFORMATION:</h3>
-                <p> 
-Methods: Credit Card<br />
-Bank Transfer <br />
-                  </p>
-              </div>
+            <div className="con-info bg-light p-4">
+              <h3>PAYMENT INFORMATION:</h3>
+              <p> 
+                Methods: Credit Card<br />
+                Bank Transfer <br />
+              </p>
+            </div>
           </div>
-          
         </div>
-        
       </div>
-      
 
       <div className="last bg-light py-5">
         <div className="container">
-          <form action="" method="post">
+          <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-md-6">
                 <div className="form-group">
                   <label htmlFor="fname">First Name</label>
-                  <input type="text" className="form-control" id="fname" name="fname" placeholder="Enter First Name" required />
+                  <input 
+                    type="text" 
+                    className="form-control" 
+                    id="fname" 
+                    name="fname" 
+                    placeholder="Enter First Name" 
+                    required 
+                    value={formData.fname} 
+                    onChange={handleChange} 
+                  />
                 </div>
                 <div className="form-group">
                   <label htmlFor="lname">Last Name</label>
-                  <input type="text" className="form-control" id="lname" name="lname" placeholder="Enter Last Name" required />
+                  <input 
+                    type="text" 
+                    className="form-control" 
+                    id="lname" 
+                    name="lname" 
+                    placeholder="Enter Last Name" 
+                    required 
+                    value={formData.lname} 
+                    onChange={handleChange} 
+                  />
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
-                  <input type="email" className="form-control" id="email" name="email" placeholder="Enter Email" required />
+                  <input 
+                    type="email" 
+                    className="form-control" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter Email" 
+                    required 
+                    value={formData.email} 
+                    onChange={handleChange} 
+                  />
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="form-group">
-                  <label htmlFor="Subject">Message</label>
-                  <textarea className="form-control" id="Subject" name="Subject" placeholder="Write your message..." style={{ height: '200px' }} required></textarea>
+                  <label htmlFor="subject">Message</label>
+                  <textarea 
+                    className="form-control" 
+                    id="subject" 
+                    name="subject" 
+                    placeholder="Write your message..." 
+                    style={{ height: '200px' }} 
+                    required 
+                    value={formData.subject} 
+                    onChange={handleChange} 
+                  ></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
               </div>
             </div>
-            <div className="col-lg-6 right-image pr-0">
-  
-</div>
-
           </form>
         </div>
       </div>
@@ -126,4 +191,4 @@ Bank Transfer <br />
   );
 }
 
-export default App;
+export default ContactUs;
