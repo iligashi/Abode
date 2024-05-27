@@ -1,12 +1,18 @@
+// PropertyHousesController.cs
+
+// Add using statements
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models;
+
 
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 {
@@ -44,8 +50,13 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // POST: api/PropertyHouses
         [HttpPost]
+        [Authorize] // Only authenticated users can post properties
         public async Task<ActionResult<PropertyHouses>> PostProperty(PropertyHouses property)
         {
+            // Get the user ID from the claims
+            var userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            property.UserId = int.Parse(userId); // Assuming UserId is an int
+
             _context.Houses.Add(property);
             await _context.SaveChangesAsync();
 
@@ -54,8 +65,18 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // PUT: api/PropertyHouses/5
         [HttpPut("{id}")]
+        [Authorize] // Only authenticated users can update properties
         public async Task<IActionResult> PutProperty(int id, PropertyHouses property)
         {
+            // Get the user ID from the claims
+            var userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            // Check if the user is the owner of the property
+            if (userId != property.UserId.ToString())
+            {
+                return Forbid(); // User is not authorized to update this property
+            }
+
             if (id != property.HousesID)
             {
                 return BadRequest();
@@ -84,12 +105,22 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
 
         // DELETE: api/PropertyHouses/5
         [HttpDelete("{id}")]
+        [Authorize] // Only authenticated users can delete properties
         public async Task<IActionResult> DeleteProperty(int id)
         {
+            // Get the user ID from the claims
+            var userId = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
             var property = await _context.Houses.FindAsync(id);
             if (property == null)
             {
                 return NotFound();
+            }
+
+            // Check if the user is the owner of the property
+            if (userId != property.UserId.ToString())
+            {
+                return Forbid(); // User is not authorized to delete this property
             }
 
             _context.Houses.Remove(property);
@@ -108,11 +139,18 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
                 return NotFound();
             }
 
+            if (photo == null || photo.Length == 0)
+            {
+                return BadRequest("Photo is not valid.");
+            }
+
             using (var memoryStream = new MemoryStream())
             {
                 await photo.CopyToAsync(memoryStream);
                 propertyHouses.Photos = memoryStream.ToArray();
             }
+
+            propertyHouses.PhotoMimeType = photo.ContentType;
 
             _context.Houses.Update(propertyHouses);
             await _context.SaveChangesAsync();
@@ -130,7 +168,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Controllers
                 return NotFound();
             }
 
-            return File(propertyHouses.Photos, "image/jpeg");
+            return File(propertyHouses.Photos, propertyHouses.PhotoMimeType);
         }
 
         private bool PropertyExists(int id)

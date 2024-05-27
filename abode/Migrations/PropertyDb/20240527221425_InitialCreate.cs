@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyDb
 {
     /// <inheritdoc />
-    public partial class Property : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

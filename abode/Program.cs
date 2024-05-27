@@ -4,11 +4,16 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 using YourNamespace.ApplicationDbContext;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
-// Add services to the container.
+
 builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
@@ -20,6 +25,23 @@ builder.Services.AddCors(options =>
         builder => builder.AllowAnyOrigin()
                           .AllowAnyMethod()
                           .AllowAnyHeader());
+});
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = configuration["Jwt:Issuer"] ?? "AbodeIssuer", 
+        ValidAudience = configuration["Jwt:Audience"] ?? "AbodeAudience", 
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"] ?? "Abode")) 
+    };
 });
 
 builder.Services.AddDbContext<UserDbContext>(options =>

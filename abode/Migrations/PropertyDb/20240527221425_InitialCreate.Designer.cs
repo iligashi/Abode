@@ -11,8 +11,8 @@ using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyDb
 {
     [DbContext(typeof(PropertyDbContext))]
-    [Migration("20240505231308_Property")]
-    partial class Property
+    [Migration("20240527221425_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

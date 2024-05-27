@@ -4,6 +4,7 @@ import './css/ProfileView.css';
 import Header from './Header';
 
 interface UserData {
+  id?: number; // Assuming there's an ID field
   username: string;
   password: string;
   name: string;
@@ -42,11 +43,10 @@ const ProfileView: React.FC = () => {
           throw new Error('Failed to fetch last logged-in user.');
         }
         const userAccounts = await response.json();
-        const lastLoggedInUser = userAccounts[userAccounts.length - 1]; // Get the last user
+        const lastLoggedInUser = userAccounts[userAccounts.length - 1];
         if (!lastLoggedInUser) {
           throw new Error('No user found.');
         }
-        // Set email and password from the last logged-in user
         const { email, password } = lastLoggedInUser;
         fetchUserProfile(email, password);
       } catch (error) {
@@ -74,6 +74,7 @@ const ProfileView: React.FC = () => {
       const userData: UserData = await response.json();
       setUserData(userData);
       setIsLoading(false);
+      saveUserData(userData); // Save user data to the Users API
     } catch (error) {
       console.error('Error fetching user profile:', error);
       setError('Failed to fetch user data.');
@@ -81,13 +82,60 @@ const ProfileView: React.FC = () => {
     }
   };
 
+  const saveUserData = async (data: UserData) => {
+    try {
+      // Extract email and password from user data
+      const { email, password } = data;
+      const userDataToSend = { email, password };
+  
+      console.log('Saving user data:', userDataToSend); // Log the request payload
+  
+      const response = await fetch(`https://localhost:7083/api/Users`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userDataToSend), // Send only email and password
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to save user data.');
+      }
+  
+      setSuccess('User data saved successfully.');
+    } catch (error) {
+      console.error('Error saving user data:', error);
+      setError('Failed to save user data.');
+    }
+  };
+  
+  
+
   const handleEditProfile = () => {
     setIsEditing(true);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+    try {
+      const response = await fetch(`https://localhost:7083/api/Users/${userData.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userData),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to update user data.');
+      }
+      const updatedUserData: UserData = await response.json();
+      setUserData(updatedUserData);
+      setIsEditing(false);
+      setSuccess('Profile updated successfully.');
+    } catch (error) {
+      console.error('Error updating user data:', error);
+      setError('Failed to update user data.');
+    }
   };
 
   const handleInputChange = (key: keyof UserData, value: string) => {
@@ -132,7 +180,7 @@ const ProfileView: React.FC = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="profile-info">
                     <div className="profile-item">
-                      <strong>Username:</strong> {isEditing ? <input type="text" value={userData.username} onChange={(e) => handleInputChange('username', e.target.value)} /> : userData.username}
+                      <strong>Username:</strong> {isEditing ? <input type="text" value={userData.username} onChange={(e) => handleInputChange('username', e.target.value)} autoComplete="username" /> : userData.username}
                     </div>
                     <div className="profile-item">
                       <strong>Password:</strong> {isEditing ? <input type="password" value={userData.password} onChange={(e) => handleInputChange('password', e.target.value)} autoComplete="current-password" /> : '*'.repeat(userData.password ? userData.password.length : 0)}
