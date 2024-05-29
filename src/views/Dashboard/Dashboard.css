@@ -1,0 +1,39 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+.dashboard-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.card {
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border-bottom: none;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table thead th {
+  background-color: #343a40;
+  color: white;
+  border-bottom: none;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+}
+
+.btn {
+  margin-right: 5px;
+}

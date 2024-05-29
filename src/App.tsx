@@ -6,6 +6,7 @@ import LoginView from "./views/LoginView";
 import ContactUs from "./views/ContactUs";
 import ProfileView from "./views/ProfileView";
 import SignUp from "./views/SignUp";
+import DashboardView from "./views/Dashboard/DashboardView";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         {/* <Route path='contact' element={<ContactForm/>}/> */}
         <Route path="profile" element={<ProfileView />} />
         <Route path="*" element={<Navigate to="/login" />} />
+        <Route path="dash" element={<DashboardView />} />
 
       </Routes>
     </BrowserRouter>
