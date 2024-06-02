@@ -2159,24 +2159,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/lrb/.nuget/packages/": {}
+    "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/lrb/Desktop/Abode/Abode/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
       "projectName": "WorkingwithSQLLiteinAsp.NETCoreWebAPI",
-      "projectPath": "/Users/lrb/Desktop/Abode/Abode/WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
-      "packagesPath": "/Users/lrb/.nuget/packages/",
-      "outputPath": "/Users/lrb/Desktop/Abode/Abode/obj/",
+      "projectPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\WorkingwithSQLLiteinAsp.NETCoreWebAPI.csproj",
+      "packagesPath": "C:\\Users\\PC-SYSTEMS\\.nuget\\packages\\",
+      "outputPath": "C:\\xampp\\htdocs\\Projekt\\Abode\\abode\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lrb/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\PC-SYSTEMS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2189,6 +2191,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2243,6 +2250,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2251,7 +2276,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

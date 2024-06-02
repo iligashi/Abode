@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyDb
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Property : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,11 +33,39 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyDb
                 {
                     table.PrimaryKey("PK_Properties", x => x.PropertyID);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "PropertyPhotos",
+                columns: table => new
+                {
+                    PhotoID = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    PropertyID = table.Column<int>(type: "INTEGER", nullable: false),
+                    PhotoURL = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PropertyPhotos", x => x.PhotoID);
+                    table.ForeignKey(
+                        name: "FK_PropertyPhotos_Properties_PropertyID",
+                        column: x => x.PropertyID,
+                        principalTable: "Properties",
+                        principalColumn: "PropertyID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PropertyPhotos_PropertyID",
+                table: "PropertyPhotos",
+                column: "PropertyID");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "PropertyPhotos");
+
             migrationBuilder.DropTable(
                 name: "Properties");
         }

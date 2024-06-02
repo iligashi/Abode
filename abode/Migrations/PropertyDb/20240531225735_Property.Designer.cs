@@ -4,15 +4,14 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using WorkingwithSQLLiteinAsp.NETCoreWebAPI.ApplicationDbContext;
 
 #nullable disable
 
 namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyDb
 {
     [DbContext(typeof(PropertyDbContext))]
-    [Migration("20240527221425_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240531225735_Property")]
+    partial class Property
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +19,7 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyDb
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.15");
 
-            modelBuilder.Entity("WorkingwithSQLLiteinAsp.NETCoreWebAPI.Models.Property", b =>
+            modelBuilder.Entity("Property", b =>
                 {
                     b.Property<int>("PropertyID")
                         .ValueGeneratedOnAdd()
@@ -67,6 +66,42 @@ namespace WorkingwithSQLLiteinAsp.NETCoreWebAPI.Migrations.PropertyDb
                     b.HasKey("PropertyID");
 
                     b.ToTable("Properties");
+                });
+
+            modelBuilder.Entity("PropertyPhoto", b =>
+                {
+                    b.Property<int>("PhotoID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PhotoURL")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("PropertyID")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("PhotoID");
+
+                    b.HasIndex("PropertyID");
+
+                    b.ToTable("PropertyPhotos");
+                });
+
+            modelBuilder.Entity("PropertyPhoto", b =>
+                {
+                    b.HasOne("Property", "Property")
+                        .WithMany("Photos")
+                        .HasForeignKey("PropertyID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Property");
+                });
+
+            modelBuilder.Entity("Property", b =>
+                {
+                    b.Navigation("Photos");
                 });
 #pragma warning restore 612, 618
         }

@@ -80,17 +80,18 @@ const Homepage = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
+  
   const fetchData = async () => {
     try {
       const response = await axios.get<Property[]>("https://localhost:7083/api/Property");
       console.log("Data fetched successfully:", response.data);
-      setProperties(response.data);
+      setProperties(response.data || []); 
     } catch (error: any) {
       handleAxiosError(error);
-      setProperties([]);
+      setProperties([]); 
     }
   };
+  
 
   const handleAxiosError = (error: AxiosError) => {
     console.error("Axios Error:", error.message);
@@ -127,6 +128,13 @@ const Homepage = () => {
         ? Number(updatedValue)
         : updatedValue
     });
+  };
+  const handleFileInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files) {
+      const files = Array.from(e.target.files);
+      const uploadedPhotos = files.map(file => URL.createObjectURL(file));
+      setNewProperty({ ...newProperty, Photos: uploadedPhotos });
+    }
   };
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -187,6 +195,27 @@ const Homepage = () => {
       DailyRate: undefined
     });
   };
+  const renderPhotoSlider = (photos: string[]) => {
+    return (
+      <div id="propertyPhotos" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          {photos.map((photo, index) => (
+            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+              <img src={photo} className="d-block w-100" alt={`Property Photo ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#propertyPhotos" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#propertyPhotos" data-bs-slide="next">
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+    );
+  };
 
   const renderAdditionalFields = () => {
     if (newProperty.PropertyType === "PropertyRent") {
@@ -213,6 +242,12 @@ const Homepage = () => {
             <Form.Label>Rent Amount</Form.Label>
             <Form.Control type="number" name="RentAmount" value={newProperty.RentAmount || ''} onChange={handleInputChange} />
           </Form.Group>
+          <Form.Group controlId="formPhotos">
+                  <Form.Label>Upload Photos</Form.Label>
+                  <Form.Control type="file" multiple onChange={handleFileInputChange} />
+                </Form.Group>
+              
+          
         </>
       );
     } else if (newProperty.PropertyType === "PropertySale") {
@@ -226,14 +261,20 @@ const Homepage = () => {
             <Form.Label>Sale Price</Form.Label>
             <Form.Control type="number" name="SalePrice" value={newProperty.SalePrice || ''} onChange={handleInputChange} />
           </Form.Group>
+          <Form.Group controlId="formPhotos">
+                  <Form.Label>Upload Photos</Form.Label>
+                  <Form.Control type="file" multiple onChange={handleFileInputChange} />
+                </Form.Group>
         </>
       );
     } else if (newProperty.PropertyType === "VacationRental") {
       return (
+        
         <Form.Group controlId="formDailyRate">
           <Form.Label>Daily Rate</Form.Label>
           <Form.Control type="number" name="DailyRate" value={newProperty.DailyRate || ''} onChange={handleInputChange} />
         </Form.Group>
+        
       );
     } else if (newProperty.PropertyType === "LandListings") {
       return (
@@ -241,6 +282,7 @@ const Homepage = () => {
           <Form.Label>Sale Price</Form.Label>
           <Form.Control type="number" name="SalePrice" value={newProperty.SalePrice || ''} onChange={handleInputChange} />
         </Form.Group>
+        
       );
     } else {
       return null;
@@ -299,6 +341,10 @@ const Homepage = () => {
                   <Form.Label>Zip Code</Form.Label>
                   <Form.Control type="text" name="ZipCode" value={newProperty.ZipCode} onChange={handleInputChange} required />
                 </Form.Group>
+                <Form.Group controlId="formPhotos">
+                  <Form.Label>Upload Photos</Form.Label>
+                  <Form.Control type="file" multiple onChange={handleFileInputChange} />
+                </Form.Group>
                 <Form.Group controlId="formPropertyType">
                   <Form.Label>Property Type</Form.Label>
                   <Form.Control as="select" name="PropertyType" value={newProperty.PropertyType} onChange={handleInputChange} required>
@@ -317,7 +363,7 @@ const Homepage = () => {
           </Col>
         </Row>
         <Row>
-          {properties.map((property) => (
+        {Array.isArray(properties) && properties.map((property) => (
             <Col key={property.PropertyID} md={4} className="mb-4">
               <Card>
                 <Card.Body>
